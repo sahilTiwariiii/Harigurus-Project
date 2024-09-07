@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.aboutusnavigationbutton{
+    height: 40px;
+    width: 133.781px;
+    /* display: inline-block; */
+    background-color: #1D3443;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutmaincontainerr{
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.aboutusorangelinejj{
+    width: 105px;
+	height: 2px;
+	background-color: #ff7010;
+	margin-top: -12px;
+}
+.inabouthomebutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.inaboutaboutbutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.aboutushrline{
+	width: 90%;
+	height: 1px;
+	margin: auto;
+	background-color: #17384e;
+	margin-top: 60px;
+	
+}
+.inaboutheading{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.aboutusimagecontainer{
+    
+    height: auto;
+}
+.imagecontainerandparagraphabout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    margin-inline: 30px;
+    gap: 30px;
+}
+.knowmoreaboutus{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+    margin-top: -4px;
+    text-align: start;
+}
+.aboutusparagraphtagsss{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 28px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.aboutusparagraphcontainer{
+    padding-right: 100px;
+    padding-left: 15px;
+    text-align: start;
+}
+.callusmeaboutus{
+    display: flex;
+    background-color: #17384e;
+    border-radius: 10px;
+    padding: 25px 25px;
+    margin-top: 40px;
+    align-items: center;
+    max-width: 400px;
+}
+.orangecircleofaboutsphone{
+    width: 65px;
+    height: 65px;
+    background-color: #ff7010;
+    /* background-color: var(--secondary-color); */
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    position: relative;
+}
+.orangecircleofaboutsphone::before{
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    bottom: -7px;
+    right: -7px;
+    border: 1.5px dashed #ff7010;
+    content: "";
+    border-radius: 100%;
+}
+
+.ustctatnt{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+    margin-bottom: 4px;
+}
+.assscallorange{
+    color: #ff7010;
+    font-size: 34px;
+    line-height: 37px;
+    font-weight: 700;
+	font-family: "Philosopher", sans-serif;
+    margin: 0;
+}
+.aboutususaimage{
+    width: 100%;
+    margin: 0 20px 30px auto;
+}
+.backslashspan{
+    color: #cee1e8;
+}
+
+@media (max-width: 990px) {
+    .imagecontainerandparagraphabout{
+        grid-template-columns: 1fr;
+       justify-content: center;
+    }
+    .aboutususaimage{
+        margin: 0;
+        width: 90%;
+    }
+    .knowmoreaboutus{
+        padding-inline:10px;
+    }
+    .aboutusimagecontainer{
+        width: 98%;
+    }
+    .aboutusparagraphtagsss{
+        padding-left: 15px;
+    }
+    .callusmeaboutus{
+        padding: 25px 10px;
+    }
+    /* .aboutusimagecontainer{
+        padding-left: 0;
+        width: 100%;
+    } */
+    .aboutusparagraphcontainer{
+        padding-right: 0;
+        padding-left: 0;
+        width: 98%;
+    }
+    .aboutusorangelinejj{
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,149 @@
+.modal{
+    height: 100vh;
+    width: 60%;
+    background-color: #031D2F;
+    position: absolute;
+    top: 1px;
+    border-right: 2px solid #FF7010;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    padding-right: 24px;
+}
+.icon-signin{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    background-color: #17384E;
+    position: relative;
+}
+.si-container{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cick{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 13px 0 13px 0;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: rgb(39, 38, 38);;
+}
+
+.mick{
+    padding-left: 8px;
+    /* height: 12px; */
+    /* width: 12px; */
+    /* background-color: white; */
+    color: white;  
+   
+}
+
+
+.tick{
+    /* padding-left: 414px; */
+    /* height: 12px; */
+    /* width: 12px; */
+    /* background-color: white; */
+    color: white; 
+}
+.tickone{
+    padding-left: 18px;
+    /* height: 12px; */
+    /* width: 12px; */
+    /* background-color: white; */
+    color: white; 
+}
+.ticktwo{
+    padding-left: 21px;
+    /* height: 12px; */
+    /* width: 12px; */
+    /* background-color: white; */
+    color: white; 
+}
+
+.polo{
+    margin-top: 26px;
+    padding-left: 31px;
+}
+.tickthree{
+    padding-left: 4px;
+    color: white; 
+}
+.ludo{
+    color: white;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 17px;;
+}
+.puurolinks{
+    /* display: flex; */
+    font-size: 13px;
+    padding: 12px 0 15px 0;
+}
+.purotiya{
+    display: flex;
+}
+.thick{
+    color: white;
+}
+.ll{
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 22px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #17384E transparent;
+}
+.content-link{
+    margin-left: 14px;
+}
+.si{
+    font-size: 16px;
+    color: white;
+    padding-left: 15px;
+    font-weight: 400;
+}
+.signinlogo{
+position: relative;
+top: 10px;
+left: 10px;
+cursor: pointer;
+}
+li{
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+.chi-chi{
+    padding-right: 82%;
+}
+.pipi{
+    padding-right: 82%;
+}
+.vota{
+    padding-right: 82%;
+}
+.ssss{
+    padding-right: 80%;
+}
+.ncncn{
+    padding-right: 80%;
+}
+
+ul{
+    margin-top: 30px;
+}
+
+@media (max-width:769px) {
+    .modal{
+        display: block;
+        z-index: 1;
+    }
+}

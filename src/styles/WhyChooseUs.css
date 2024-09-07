@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.whytochoosemaincontainer {
+	max-width: 1200px;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	align-items: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.whychoosetofirst,
+.whychoosetosecond,
+.whychoosetothird {
+	width: 130px;
+	height: 130px;
+}
+.whytochoosefirstcontainer {
+	width: 30%;
+	padding-inline: 15px;
+}
+.whytochoosesecondcontainer {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+.whytochooseusheading {
+	font-size: 36px;
+	font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+
+.whytochooseusparagraph {
+	font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+
+}
+.whytochooseusorangeline {
+	width: 105px;
+	height: 2px;
+	/* position: relative; */
+	/* margin: auto; */
+	background-color: #ff7010;
+	margin-top: -12px;
+}
+.whytochoooseusspann {
+	position: relative;
+	top: -58px;
+	color: #cee1e8;
+	left: -81px;
+	font-size: 24px;
+	font-family: "Philosopher", sans-serif;
+}
+.whytochoooseusspane {
+	position: relative;
+	top: -58px;
+	color: #cee1e8;
+	left: -81px;
+	font-size: 24px;
+	font-family: "Philosopher", sans-serif;
+}
+.whytochoooseusspanm {
+	position: relative;
+	top: -58px;
+	color: #cee1e8;
+	left: -81px;
+	font-size: 24px;
+	font-family: "Philosopher", sans-serif;
+}
+.whytochooseusheadingss {
+	color: #cee1e8;
+	font-size: 20px;
+	font-family: "Philosopher", sans-serif;
+}
+.whytochooseusheadingsss {
+	color: #cee1e8;
+	font-size: 20px;
+	font-family: "Philosopher", sans-serif;
+}
+.whytochooseusheadingssss {
+	color: #cee1e8;
+	font-size: 20px;
+	font-family: "Philosopher", sans-serif;
+}
+
+.whytochoosefirstimagecontainer {
+	text-align: start;
+}
+.whytochoosesecondimagecontainer {
+	text-align: left;
+}
+.whytochoosethirdimagecontainer {
+	text-align: end;
+}
+
+@media (max-width: 768px) {
+	.whytochoosesecondcontainer {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 990px) {
+	.whytochoosemaincontainer {
+		flex-direction: column !important;
+	}
+	.whytochoosefirstcontainer {
+		width: 100% !important;
+		text-align: center;
+	}
+	.whytochooseusorangeline {
+		margin: auto;
+	}
+	.whytochoosesecondcontainer {
+		width: 100% !important;
+		justify-content: space-between;
+	}
+}

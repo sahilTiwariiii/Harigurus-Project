@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.bookmaincontainer{
+    /* background-color: rgb(161, 92, 92); */
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
+}
+.bookfirstcontainer{
+    text-align: center;
+    width: 940px;
+    margin-bottom: 30px;
+}
+
+.dateandtimecontainer{
+  display: flex;
+  justify-content: space-around;
+  width: 940px;
+ background-color: #07273C;
+ margin-bottom: 60px;
+ height: 180px;
+ align-items: center;
+  
+}
+.bookaneventheading{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Philosopher", sans-serif;
+    color: #CEE1E8;
+}
+input{
+    border: none;
+    color: #586F7D;
+}
+
+.dating{
+    background-color: #17384E;
+    height: 50px;
+    width: 140px;
+    padding: 0 28px 0 28px;
+    border: none;
+    outline: none;
+    /* appearance: none !important; */
+}
+.timing{
+    background-color: #17384E;
+    height: 50px;
+    width: 140px;
+    padding: 0 28px 0 28px;
+    border: none;
+    outline: none;
+}
+.eventing{
+    background-color: #17384E;
+    height: 50px;
+    width: 182px;
+    padding: 0 28px 0 28px;
+    border: none;
+    outline: none;
+}
+.dateee{
+    font-family: "Philosopher", sans-serif;
+    font-family: 22px;
+    color: #CEE1E8;
+
+}
+/* removing the default icon of date which was provided by input type date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  /* removing the default icon of time which was provided by input type time */
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+.mydateimage{
+    position: relative;
+    left: -32px;
+    top: 4px;
+}
+.mytimeimage{
+    position: relative;
+    left: -32px;
+    top: 4px;
+}
+.bookandeventparagraph{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    color: #CEE1E8;
+}
+.orangeline{
+    width: 120px;
+    height: 4px;
+    /* position: relative; */
+    margin: auto;
+    background-color: #FF7010;
+    margin-top: -12px;
+   
+}
+.orangebuttonevent{
+    width: 136px;
+	height: 51px;
+	background-color: #ff7010;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgb(229, 240, 245);
+	margin-left: 32px;
+	margin-top: 25px;
+	cursor: pointer;
+    top: 14px;
+    left: -28px;
+}
+.orangebuttonevent::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+    left: 132px;
+	width: 20px;
+	height: 0;
+	border-top: 24px solid transparent;
+    border-bottom: 29px solid transparent;
+	border-left: 26px solid #ff7010;
+}
+.orangebuttonevent::after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -24px;
+	width: 0;
+	height: 0;
+	border-top: 24px solid transparent;
+	border-bottom: 29px solid transparent;
+	border-right: 26px solid #ff7010;
+}
+
+
+
+@media (max-width:990px) {
+    .bookmaincontainer{
+        margin-top: -66px;
+    }
+    .dateandtimecontainer{
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        /* width: auto; */
+        width: 85vw;
+        /* padding-left: 30px; */
+        /* padding-right: 30px; */
+    }
+    .dating {
+        width: 53vw;
+    }
+    .timing {
+        width: 53vw;
+    }
+    .eventing {
+        width: 59vw;
+        position: relative;
+        left: -8px;
+    }
+.orangebuttonevent{
+    margin-left: 0;
+    top: 0;
+     left: 0;
+     padding-bottom: 0;
+    margin-bottom: 25px;
+}
+.bookfirstcontainer{
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    /* width: auto; */
+    width: 100vw;
+}
+.bookandeventparagraph{
+    padding: 0 15px;
+    line-height: 24px;
+}
+}
+    

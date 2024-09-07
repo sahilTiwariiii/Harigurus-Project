@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.recenteventsmain{
+	max-width: 1200px;
+	margin-inline: auto;
+	margin-bottom: 124px;
+}
+.hrline{
+	width: 90%;
+	height: 2px;
+	margin: auto;
+	background-color: #17384e;
+	margin-top: 60px;
+	
+}
+.recenteventsheading{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.recenteventsparagraph{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+	text-align: center;
+}
+
+
+.starsrating{
+	width: 25%;
+    height: 19px;
+    width: 80px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.akramtikram{
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+	margin-top: 6px;
+}
+.recenteventscardscontainer{
+	margin-inline:20px;
+	
+}
+.recenteventimg{
+	width: 100%;
+	height: 220px;
+}
+
+
+.realcardrecentcard{
+	display: flex;
+	flex-direction: column;
+}
+.recenteventscardscontainer{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    margin-top: 32px;
+	padding: 0 15px 0 15px;
+}
+.recenteventsorangelinecontainer{
+	width: 105px;
+	height: 2px;
+	margin: auto;
+	background-color: #ff7010;
+	/* margin-top: 4px; */
+	margin-bottom: 33px;
+}
+
+.hoverstripe{
+	width: 100%;
+    height: 70px;
+    position: relative;
+	top: -70px;
+    background-color: #ff7010;
+    text-align: center;
+    margin-bottom: -78px;
+	color: rgb(255, 255, 255);
+	opacity: 0;
+}
+.viewdetailsorange{
+	text-decoration: none;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 18px;
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	line-height: 40px;
+    color: rgb(255, 255, 255);
+}
+.viewdetailsorange:hover{
+	color: rgb(255, 255, 255);
+}
+.realcardrecentcard:hover .hoverstripe{
+	opacity: 1;
+	color: rgb(255, 255, 255);
+}
+@media (max-width:990px) {
+	.recenteventscardscontainer{
+		grid-template-columns: 1fr;
+	}
+}
+@media (min-width: 1200px) {
+    .recenteventscardscontainer {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns when container width is full */
+        max-width: 100%; /* Allow container to be full width */
+    }
+}

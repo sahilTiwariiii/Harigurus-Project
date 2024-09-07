@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.profilesnavigationbutton{
+    height: 40px;
+    width: 133.781px;
+    /* display: inline-block; */
+    background-color: #1D3443;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inprofilesheading{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.profilemaincontainer{
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.backslashspannpro{
+    color: #cee1e8;
+}
+.profilesecondcontainer{
+    background-image: url(../assets/bakgroundimage.jpg);
+    max-width: 1200px;
+    margin-inline: auto;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 40px;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 73px;
+    margin-bottom: 50px;
+    padding-top: 73px;
+    margin-top: 40px;
+}
+
+.letmedown{
+width: 16px;
+margin-right: 12px;
+margin-top: -7px;
+}
+.secondcontainerfirstwala{
+    display: flex;
+    cursor: pointer;
+}
+.secondcontainersecondwala{
+    cursor: pointer;
+}
+.secondcontainercookswala{
+    display: flex;
+}
+.secondcontainerthirdwala{
+    cursor: pointer;
+}
+.firstastrologycontainer{
+    display: flex;
+}
+.purohits{
+    font-size: 24px;
+    font-weight: 400;
+	/* line height for giving the space beween two lines */
+	line-height: 26px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.inabouthomebutton{
+        font-size: 14px;
+        /* line height for giving the space beween two lines */
+        line-height: 18px;
+        font-family: "Inter", sans-serif;
+        color: #cee1e8;   
+}
+.inprofileprofilebutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.purohitscards{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.clickandopenpurohitscontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 16px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.nameofpurohit{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.putohitaddress{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.clickandopencookscontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 16px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.cookscardsss{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.secondcontainerastrologywala{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 16px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.astrologycards{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (max-width:320px) {
+    .profilefirstcontainer{
+        padding-top: 20px;
+    }
+}

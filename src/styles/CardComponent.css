@@ -1,0 +1,87 @@
+.datacardcomponent {
+    padding: 50px 22px;
+    text-align: center;
+    background-color: #07273C;
+}
+
+.particulardatacardcard {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1.5px dashed #357DA9; /* Initial static border color */
+    border-radius: 50%;
+}
+
+.particulardatacardcard::before {
+    content: '';
+    position: absolute;
+    top: -1.5px;
+    left: -1.5px;
+    width: 100%;
+    height: 100%;
+    border: 1.5px dashed orange;
+    border-radius: 50%;
+    pointer-events: none; /* Prevents interaction with the pseudo-element */
+    opacity: 0; /* Hide the rotating border initially */
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.datacardcomponent:hover .particulardatacardcard::before {
+    opacity: 1; /* Show the rotating border on hover */
+    border-color: #FF7010; /* Change color of the rotating border on hover */
+    animation: rotateBorder 9s linear infinite; /* Speed up rotation on hover */
+}
+
+.datacardcomponent:hover .particulardatacardcard {
+    border-color: transparent; /* Hide the static border on hover */
+}
+
+.imageimageimagess {
+    width: 64px;
+    height: 64px;
+    background-color: #102939;
+    border-radius: 100%;
+}
+.datacardcomponent:hover .imageimageimagess{
+    background-color: #FF7010;
+}
+.headingheading {
+    font-size: 24px;
+    font-family: "Philosopher", sans-serif;
+    color: #CEE1E8;
+}
+
+.paragraphofcardcomponent {
+    font-size: 14px;
+    line-height: 24px; /* Line height for giving space between two lines */
+    font-family: "Inter", sans-serif;
+    color: #CEE1E8;
+}
+
+.readmorecardcomponent {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #FF7010;
+}
+
+.cardcomponentorangelineinthis{
+    width: 70px;
+    height: 2px;
+    /* position: relative; */
+    margin: auto;
+    background-color: #FF7010;
+    margin-top: -12px;
+   
+}
+
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

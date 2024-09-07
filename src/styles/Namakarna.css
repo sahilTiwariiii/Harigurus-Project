@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.detailsamaincontainerr{
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.aksharabhyasaaheading{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.detailsssnavigationbutton{
+    height: 40px;
+    width: 336.781px;
+    /* display: inline-block; */
+    background-color: #1D3443;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailsshomebutton{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 18px;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8; 
+}
+
+.detailsssbackslashspann{
+    color: #cee1e8;
+}
+
+
+.detailsssbutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.inasksharbhyasabutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.detailllssecondmaincontianer{
+    background-image: url(../assets/bakgroundimage.jpg);
+    max-width: 1200px;
+    margin-inline: auto;
+    height: auto;
+    padding-inline: 15px;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+.detailstlssecondcontainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    gap: 30px;
+    padding-inline:65px;
+    margin-bottom: 80px;
+}
+.detialsimage{
+    width: 100%;
+}
+
+.detaildetailsheading{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+
+.detailsdetailsdetailssecondcontainer{
+    text-align: start;
+}
+.detaildetailsheading{
+    margin-top: -7px;
+}
+.detaildetailsparagraph{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: rgb(229, 240, 245); 
+}
+
+.detailsstartingprice{
+    font-size: 28px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+
+.detailsstartingpricemoney{
+    font-size: 28px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+    color: #ff7010;
+}
+.detailspricemay{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8;  
+}
+
+.callusinpara{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #ff7010;
+    cursor: pointer;
+}
+.callusinpara:hover{
+    color: #cee1e8; 
+}
+
+.detailspageorangebutton{
+    position: absolute;
+    height: 50px;
+    background-color: #ff7010;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    outline: none;
+    top: 5px;
+    left: 17px;
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.detailspageorangebutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ff7010;
+}
+.detailspageorangebutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #ff7010
+}
+.buttonsdetailspage{
+    display: flex;
+    gap: 20px;
+}
+
+.detailspagesecondbutton{
+    font-size: 16px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: rgb(229, 240, 245);    
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
+.detailspagethirdbutton{
+    font-size: 16px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color:   rgb(229, 240, 245) ;
+    margin-top: 16px;
+}
+
+.detailssecondsecondcontaineree{
+          display: grid;
+        gap: 30px;
+        padding-inline:65px;
+}
+
+.detailstogletabtab{
+    height: 60px;
+    background-color: #10334A;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-inline: 20px;
+}
+.detailstablinks{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8;
+    cursor: pointer;
+    /* margin-top: 16px;    */
+}
+
+
+.nav-link {
+    position: relative; 
+    color: white; 
+    text-decoration: none; 
+    padding-top: 10px; 
+    transition: color 0.3s ease; 
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0; /* Position the line at the top */
+    height: 4px; /* Height of the underline */
+    width: 0; /* Start with zero width */
+    background-color: #FF5832; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+  
+  .nav-link:hover::before, 
+  .nav-link.active::before {
+    width: 100%; /* Expand to full width on hover or when active */
+  }
+  
+  .nav-link:hover {
+    color: #FF5832; /* Change text color on hover */
+  }
+
+
+  
+  .tooglecontenttitle{
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+    color: #ff7010;
+  }
+
+.contentboxconditionrendering{
+    text-align: start;
+}
+.togglecontentparagraph{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8;
+}
+.detailspageushrline{
+    width: 90%;
+	height: 1px;
+	margin: auto;
+	background-color: #17384e;
+	margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+@media (max-width:320px) {
+    .detailsssfirstcontainer{
+        padding-top: 20px;
+    }
+}
+@media (max-width:340px) {
+    .detailsshomebutton{
+        font-size: 12px;
+    }
+    .inasksharbhyasabutton {
+        font-size: 12px;
+    }
+    .detailsssnavigationbutton{
+        width: 302.781px;
+    }
+}
+@media (max-width: 400px) {
+    
+}
+
+@media (max-width:597px) {
+    .buttonsdetailspage{
+        flex-direction: column;
+    }
+    .detailspageorangebutton{
+        margin-left: 0;
+        margin-right: 53px;
+    }
+    .detailspagesecondbutton{
+        margin-left: 41px;
+    }
+    .detailspagethirdbutton{
+        margin-left: 41px;
+    }
+}
+@media (max-width:990px) {
+    .detailstlssecondcontainer{
+        grid-template-columns: 1fr;
+        padding-inline: 0;
+    }
+    .detailssecondsecondcontaineree{
+        padding-inline: 0;
+    }
+    .detailstlsprofileimagecontainer{
+        padding-inline: 6px;
+    }
+    .detaildetailsheading{
+        padding-inline: 6px;
+    }
+    .detaildetailsparagraph{
+        padding-inline: 6px;
+    }
+}

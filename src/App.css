@@ -1,0 +1,88 @@
+/* header */
+@media (max-width: 320px){
+    .imgg {
+    margin-left: 1px;
+height: 58px;
+    width: 177px;
+}
+
+.icon-background {
+height: 30px;
+width: 30px;
+       left: -11px;
+}
+.headphone {
+
+top: 6px;
+left: 6px;
+
+}
+
+.hamburger {
+    width: 20px;
+height: 27px;
+position: relative;
+}
+
+header {
+    height: 0;
+        min-width: 0;
+   min-width: 0;
+   margin-bottom: 36px;
+   }
+
+   .container {
+
+    min-width: 0;
+    background-color: #07273C;
+    /* padding-left: 9px; */
+ 
+}
+
+    .containerone {
+         width: 0;
+         /* justify-content:  */
+    }
+    .mubuttonn{
+        margin-left: 0;
+   margin-top: 0;
+  }
+
+  .fistImage {
+      left: -1px;
+      top: 49px;
+height: 184.667px;
+  width: 211px;
+  position: relative;
+  }
+
+  .secondImage {
+      width: 199px;
+      height: 165px;
+      right: 1px;
+      top: -68px;
+  position: relative;
+  }
+
+  .thirdImage {
+      width: 190px;
+      top: -179px;
+      right: 1px;
+      position: relative;
+  height: 172.844px;
+  }
+
+  .cardcomponentsecondmainbox {
+
+    grid-template-columns: repeat(auto-fill, minmax(213px, 1fr));
+   
+}
+
+}
+
+
+
+
+
+
+

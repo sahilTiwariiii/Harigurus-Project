@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  /* font-weight:400; */
+  font-style: normal;
+}
+header{
+    height: 84px;
+    background-color: #07273C;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-right: 10px;
+}
+.containerone{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.imgg{
+    height: 70px;
+    width: 250px;
+    margin-left: 30px;
+    padding: 7px 0px;
+}
+.icon-background{
+    height: 40px;
+    width: 40px;
+    border-radius:50% ;
+    background-color: #17384E;
+    position: relative;
+}
+
+.headphone{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.containertwo{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    text-align: left;
+    gap: 9px;
+    /* position: relative; */
+    /* text-decoration: none; */
+}
+
+a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    
+}
+
+.icon-backgroundtwo{
+    height: 40px;
+    width: 40px;
+    border-radius:50% ;
+    background-color: #17384E;
+    /* position: relative; */
+}
+
+
+.one{
+    display: flex;
+    gap: 20px;
+    /* text-decoration: none; */
+}
+
+a:hover{
+    color: #FF5832;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hoverline{
+    height: 10px;
+    width: 20px;
+    color: #FF5832;
+}
+
+.nav-link {
+ 
+    color: white;  /* Default text color */
+    text-decoration: none;
+ 
+  }
+  
+  .showline{
+
+  height: 4px;  /* Height of the underline */
+
+  background-color: #FF5832;  /* Color of the underline */
+  transition: width 0.3s ease;  /* Smooth width transition */
+  }
+
+
+  .nav-link {
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    color: white; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    padding-top: 10px; 
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0; /* Position the line at the top */
+    height: 4px; /* Height of the underline */
+    width: 0; /* Start with zero width */
+    background-color: #FF5832; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+  
+  .nav-link:hover::before, 
+  .nav-link.active::before {
+    width: 100%; /* Expand to full width on hover or when active */
+  }
+  
+  .nav-link:hover {
+    color: #FF5832; /* Change text color on hover */
+  }
+  
+
+ .dropdownmaincontainer{
+    position: absolute;
+    background-color: #17384E;
+    height: 190px;
+    width: 170px;
+    top: 45px;
+    right: -124px;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    border-radius: 10px;
+    content: '';
+    display: none;
+    z-index: 1000;
+    /* flex-direction: column; */
+}
+.dropdownmaincontainer::before {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 22px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #17384E transparent;
+  }
+
+
+  .service:hover .dropdownmaincontainer {
+    display: block; /* Show dropdown on hover */
+  }
+
+  .minks{
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+    
+    }
+.pinks{
+    font-size: 13px;
+    padding: 12px 0 15px 0;
+}
+.pauohitya-dopdown-container{
+    position: absolute;
+    background-color: #17384E;
+    height: 514px;
+    width: 170px;
+    top: 19px;
+    right: 196px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    display: none;
+}
+.pauohitya-dopdown-container::before {
+    content: '';
+    position: absolute;
+    top: 1%;
+    right: -14px;
+    border-width: 9px;
+    rotate: 178deg;
+    border-style: solid;
+    border-color: transparent #17384E transparent transparent;
+}
+
+.pau:hover .pauohitya-dopdown-container{
+    display: flex;
+}
+
+.pujas-dopdown-container{
+    position: absolute;
+    background-color: #17384E;
+    height: 150px;
+    width: 170px;
+    top: 65px;
+    right: 196px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    display: none;
+}
+  
+.pujas-dopdown-container::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: -14px;
+    border-width: 9px;
+    rotate: 178deg;
+    border-style: solid;
+    border-color: transparent #17384E transparent transparent;
+}
+
+.kinks{
+    font-size: 13px;
+    padding: 15px 0 15px 0;
+}
+
+.pujas:hover .pujas-dopdown-container{
+display: flex;
+}
+
+.cook-dopdown-container{
+    position: absolute;
+    background-color: #17384E;
+    height: 110px;
+    width: 170px;
+    top: 118px;
+    right: 196px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    display: none;
+}
+
+.cook-dopdown-container::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: -14px;
+    border-width: 9px;
+    rotate: 178deg;
+    border-style: solid;
+    border-color: transparent #17384E transparent transparent;
+}
+
+.cooking:hover .cook-dopdown-container{
+    display: flex;
+}
+
+.astrology-dopdown-container{
+    position: absolute;
+    background-color: #17384E;
+    height: 150px;
+    width: 170px;
+    top: 161px;
+    right: 196px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    display: none;
+}
+
+.astrology-dopdown-container::before {
+    content: '';
+    position: absolute;
+    top: 7%;
+    right: -14px;
+    border-width: 9px;
+    rotate: 178deg;
+    border-style: solid;
+    border-color: transparent #17384E transparent transparent;
+}
+
+.astro:hover .astrology-dopdown-container{
+    display: flex;
+}
+
+
+@media (max-width: 460px) {
+    .imgg{
+        height: 61px;
+        width: 239px;
+    }
+}
+
+
+@media (max-width: 769px) {
+    .containertwo{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .containerone{
+        width: 728px;
+    justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 833px) {
+    .imgg {
+        margin-left: 1px;
+    }
+    .icon-background {
+        position: relative;
+        left: -11px;
+    }
+    
+    
+    .one {
+        display: flex;
+        gap: 15px;
+        /* text-decoration: none; */
+    }
+}
+

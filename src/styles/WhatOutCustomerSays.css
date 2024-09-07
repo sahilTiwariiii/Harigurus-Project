@@ -1,0 +1,110 @@
+.whatourcustomersaysmain{
+    background-image: url(../assets/bakgroundimage.jpg);
+    max-width: 1200px;
+    margin-inline: auto;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.whatourcustomresaysuserscontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 45px;
+    margin-inline: auto; /* Center the container horizontally */
+    max-width: 100%; /* Ensure the container takes up available space */
+    padding: 10px; /* Optional padding for spacing */
+    justify-content: center; 
+}
+.whatourcustomersaysheading{
+    font-size: 36px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.myorangelinewhatourcustomer{
+    width: 105px;
+	height: 2px;
+	margin: auto;
+	background-color: #ff7010;
+	margin-top: 4px;
+    margin-bottom: 85px;
+}
+.whatoutcustomerparagrah{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.whatourcustomerusersays{
+    font-size: 20px;
+    line-height: 22px;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.imageuserimagewhy{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    left: 20px;
+    top: -47px;
+}
+.justdivonly{
+    /* background-image: url('../assets/quote.svg'); */
+    background-color: #10334A;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+    position: relative;
+    margin-bottom: 58px;
+    /* background-repeat: no-repeat; */
+}
+.recenteventsparagraph{
+    padding-inline: 30px;
+}
+.orangecirclequotesimg{
+    height: 38px;
+    width: 38px;
+    background-color: #ff7010;
+    border-radius: 100%;
+    position: relative;
+    top: -68px;
+    left: -6px;
+    display: inline-block;
+
+}
+.whatourquoteimage{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 10px;;
+}
+.qvoteoo{
+    position: absolute;
+    width: 88px;
+    height: 76px;
+    margin-inline: -45px;
+    margin-top: -3px;
+    opacity: 0.1;
+}
+.whatourcustomersayscard{
+    margin-top: -35px;
+}
+
+
+@media (max-width:990px) {
+    .whatourcustomresaysuserscontainer{
+        grid-template-columns: 1fr;
+    }
+}

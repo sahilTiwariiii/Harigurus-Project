@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.booscontainer {
+	/* padding-right: 29px; */
+	max-width: 1200px;
+	margin-inline: auto;
+}
+.sortcontainer {
+	/* min-height: 440px; */
+	height: 440px;
+	display: flex;
+	align-items: center;
+	padding-left: 61px;
+	max-width: 1200px;
+	margin-inline: auto;
+}
+.whatsup {
+	font-family: "Philosopher", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgb(247, 128, 47);
+	font-size: 26px;
+	/* margin-top: -49px; */
+}
+.book,
+.today {
+	font-family: "Philosopher", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 42px;
+	color: #CEE1E8;
+}
+.firstpararaph,
+.secondparagraph {
+	font-family: "Inter", sans-serif;
+	line-height: 24px;
+	color: #CEE1E8;
+}
+
+.secondchilderncontainer {
+	position: relative;
+	padding-bottom: 104px;
+}
+.fistImage {
+	height: 250.667px;
+	width: 300px;
+	position: absolute;
+	left: 10px;
+	top: -117px;
+	border: 2px solid #cfdbe2;
+	border-radius: 4px;
+}
+.fistImage:hover,
+.secondImage:hover,
+.thirdImage:hover {
+	transform: scale(1.2);
+	z-index: 1;
+}
+.secondImage {
+	height: 212px;
+	width: 300px;
+	position: absolute;
+	right: -441px;
+	top: -31px;
+	border: 2px solid #cfdbe2;
+	border-radius: 4px;
+}
+.thirdImage {
+	height: 200.844px;
+	width: 300px;
+	position: absolute;
+	top: 51px;
+	right: -394px;
+	border: 2px solid #cfdbe2;
+	border-radius: 4px;
+}
+
+.firstchilderncontainer {
+	max-width: 480px;
+	/* dont give fixed width to the any container because if if you give the width will remaine same in all the screen which is not good */
+
+	/* very important property 'min-width:auto'  it will adjust the size of the firstchilderncontainer according to the screen like if the screen is small at that time it will decrease the size of firstchilderncontainer  */
+	min-width: auto;
+	margin-right: 7px;
+}
+.mubuttonn {
+	width: 210px;
+	height: 52px;
+	background-color: #ff7010;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgb(229, 240, 245);
+	margin-left: 32px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+.mubuttonn::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 208px;
+	width: 20px;
+	height: 0;
+	border-top: 24px solid transparent;
+	border-bottom: 31px solid transparent;
+	border-left: 26px solid #ff7010;
+}
+.mubuttonn::after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -24px;
+	width: 0;
+	height: 0;
+	border-top: 24px solid transparent;
+	border-bottom: 29px solid transparent;
+	border-right: 26px solid #ff7010;
+}
+
+@media (max-width: 1000px) {
+	.booscontainer {
+		padding: 0;
+	}
+	.sortcontainer {
+		height: 802px;
+		padding: 0;
+		flex-direction: column;
+		text-align: center;
+	}
+	.fistImage {
+		left: -151px;
+		top: 49px;
+	}
+	.secondImage {
+		width: 282px;
+		right: -143px;
+		top: 137px;
+	}
+	.thirdImage {
+		width: 267px;
+		top: 219px;
+		right: -137px;
+	}
+}
+
+@media (max-width:990px) {
+	.sortcontainer{
+		padding-top: 40px;
+	}
+	.whatsup{
+		font-size: 18px;
+	}
+	.book{
+		font-size: 30px;
+	}
+	.firstpararaph{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.secondparagraph{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.firstchilderncontainer{
+		margin: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+	}
+}
