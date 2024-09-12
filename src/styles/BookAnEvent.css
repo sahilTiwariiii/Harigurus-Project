@@ -61,6 +61,7 @@ input{
     padding: 0 28px 0 28px;
     border: none;
     outline: none;
+    color: white;
 }
 .dateee{
     font-family: "Philosopher", sans-serif;

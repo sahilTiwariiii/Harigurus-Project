@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.signupkabapcontainerrealme{
+    display: flex;
+    padding-inline: 10px;
+    justify-content: center;
+}
+.signupmaincontainer{
+    background-color: #17384E;
+/* height: 500px; */
+max-width: 500px !important;
+/* margin: auto; */
+
+padding-inline: 20px;
+margin-top: 100px;
+margin-bottom: 50px;
+padding-bottom: 50px;
+    /* max-height: 500px; */
+}
+
+.loginmainheading{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.lightlinelineline{
+    height: 1px;
+    background-color: #2F4D61;
+}
+.crossbuttonhai{
+    color: #fff;
+    font-weight: 300;
+    text-shadow: none;
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #031d2e;
+    /* background-color: var(--dark-color1); */
+    border-radius: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    outline: none !important;
+}
+.loginandcloseiconcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    cursor: pointer;
+}
+.crossiconspecial{
+    position: relative;
+    left: 7px;
+    top: -1px;
+}
+.inputstagshmm{
+    margin-top: 20px;
+    width: -webkit-fill-available;
+	height: 50px;
+	background-color: inherit;
+	border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 0;
+	outline: none;
+	/* margin-bottom: 20px; */
+	color: #cee1e8;
+    /* margin-inline: 20px; */
+}
+input{
+    padding-left: 20px;
+}
+input::placeholder{
+    /* margin: 0; */
+	/* text-align: start; */
+	font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 20px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+    color: #96B0C0;;
+}
+.loginwithotp{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 26px;
+	font-weight: 600;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+    text-align: center;
+}
+.buttonscontainerofligin{
+display: grid;
+justify-content: center;
+margin-top: 20px;
+}
+
+
+.signbuttoninlogincontainer{
+    position: absolute;
+    height: 50px;
+    background-color: #ff7010;
+    align-items: center;
+    text-align: center;
+    width:fit-content;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    /* align-items: center; */
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    outline: none;
+    top: -25px;
+    left: 17px;
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);  
+	margin-top: 40px; 
+	cursor: pointer;
+    /* margin: auto; */
+}
+.signbuttoninlogincontainer::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ff7010;
+}
+.signbuttoninlogincontainer::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #ff7010
+}
+.createnewaccount{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);  
+}
+.signupoption{
+    color:#EA6A17
+}
+.googlebuttonandbutton{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-inline: 10px;
+    border-radius: 2px;
+}
+.signupwithgoogle{
+
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+	font-weight: 500;
+	font-family: "Inter", sans-serif;
+	color: 
+    rgba(0, 0, 0, 0.54);
+    /* padding: 10px; */
+}
+.boththelink{
+    margin-top: -9px;
+}
+.mobilenumber{
+  position: relative;
+}
+.getotpbutton{
+    position: absolute;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color: #999;
+    top: 32px;
+    right: 15px;
+    /* cursor: default; */
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    padding: 2px 12px;
+    border-radius: 3px;
+
+}

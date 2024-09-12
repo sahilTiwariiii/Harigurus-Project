@@ -33,11 +33,11 @@ const Mundan = () => {
 							Services
 						</Link>{' '}
                         &nbsp;  <span className="detailsssbackslashspann">/</span> &nbsp;
-						<Link to="/paurohitya" className="inasksharbhyasabutton">
+						<Link to="/services/paurohitya" className="inasksharbhyasabutton">
             Paurohitya
 						</Link>
             &nbsp;  <span className="detailsssbackslashspann">/</span> &nbsp;
-						<Link to="/mundan" className="detailsssbutton">
+						<Link to="/services/paurohitya/mundan" className="detailsssbutton">
             Mundan
 						</Link>
 					</div>
@@ -60,11 +60,11 @@ const Mundan = () => {
            <p className='detailspricemay'>*Prices may vary based on the family's rituals. Please <span className='callusinpara'>call us</span> call us for more details.</p>
            {/* orange Button */}
            <div className="buttonsdetailspage">
-           <div className="detailspageorangebutton">BOOK NOW</div>
-           <Link to='/cook'>
+           <Link to='/checkout' className="detailspageorangebutton">BOOK NOW</Link>
+           <Link to='/services/cook'>
            <h1 className="detailspagesecondbutton">Need a Cook?</h1>
            </Link>
-           <Link to='/astrology'>
+           <Link to='/services/astrology'>
            <h1 className="detailspagethirdbutton">Fix Muhurtham?</h1>
            </Link>
            </div>

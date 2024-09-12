@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/PaurohityaServices.css"
-import { Link } from 'react-router-dom'
+import { Link,Outlet } from 'react-router-dom'
 import AksharabhyasImage from '../assets/Aksharabhyasa.jpg';
 import mundanImage from '../assets/Mundan.jpg';
 import NamakaranaImage from '../assets/Namakarana.jpg';
@@ -125,9 +125,11 @@ const PaurohityaServices = () => {
     const showmoreandlessfunctionUttaraKriyaKarma=()=>{
         setShowMoreAndLessUttaraKriyaKarma(!showMoreAndLessUttaraKriyaKarma)
     }
+
   return (
     <>
     <div className="paurohityaservicesmaincontainer">
+
         {/* first Paurohitya Services container */}
 
         <div className="insidepurphityafirstcontainer">
@@ -142,7 +144,7 @@ const PaurohityaServices = () => {
 							Services
 						</Link>{' '}
                         &nbsp;  <span className="purohityabackslashspann">/</span> &nbsp;
-						<Link to="/paurohitya" className="inpuropurohhbutton">
+						<Link to="/services/paurohitya" className="inpuropurohhbutton">
                         Paurohitya
 						</Link>
 					</div>
@@ -155,7 +157,7 @@ const PaurohityaServices = () => {
                     
 					{/* first card Purohitya */}
                     {/* Aksharbhaya card <Link to='/services/paurohitya'> */}
-                    <Link to='/aksharabhyasa'>
+                    <Link to='/services/paurohitya/aksharabhyasa'>
 					<div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -164,7 +166,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={AksharabhyasImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -181,7 +183,7 @@ const PaurohityaServices = () => {
                     </Link>
                     {/* </Link> */}
 					{/* Mundan card second card */}
-                    <Link to='/mundan'>
+                    <Link to='/services/paurohitya/mundan'>
 					<div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -190,7 +192,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={mundanImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -207,7 +209,7 @@ const PaurohityaServices = () => {
                     </Link>
 					{/* third card Cook */}
                     {/* Namakarna Card */}
-                    <Link to='/namakarna'>
+                    <Link to='/services/paurohitya/namakarna'>
 					<div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -216,7 +218,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={NamakaranaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -233,7 +235,7 @@ const PaurohityaServices = () => {
                     </Link>
 					{/* fourth card Astrology */}
                     {/* Upanayana */}
-                    <Link to='/upanayana'>
+                    <Link to='/services/paurohitya/upanayana'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -242,7 +244,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={UpanayanaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -259,7 +261,7 @@ const PaurohityaServices = () => {
                     </Link>
 					{/* 5 card Astrology */}
                     {/* Engagement */}
-                    <Link to='/engagement'>
+                    <Link to='/services/paurohitya/engagement'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -268,7 +270,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={EngagementImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -285,7 +287,7 @@ const PaurohityaServices = () => {
                     </Link>
                     {/* 6 card Astrology */}
                     {/* Wedding  */}
-                    <Link to='/wedding'>
+                    <Link to='/services/paurohitya/wedding'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -294,7 +296,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={weddingImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -311,7 +313,7 @@ const PaurohityaServices = () => {
                     </Link>
                      {/* 7 card Astrology */}
                     {/* Shashtipoorthi Shanti */}
-                    <Link to='/shashtipoorthishanti'>
+                    <Link to='/services/paurohitya/shashtipoorthishanti'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -320,7 +322,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={SastiapoorthiImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -335,9 +337,9 @@ const PaurohityaServices = () => {
                         </div>
 					</div>
                     </Link>
-                     {/* 8 card Astrology */}
+                     {/* 8 card Astrology */} 
                     {/* Bhimaratha Shanti */}
-                    <Link to='/bhimarathashanti'>
+                    <Link to='/services/paurohitya/bhimarathashanti'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -346,7 +348,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={BhimarathiImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -363,7 +365,7 @@ const PaurohityaServices = () => {
                     </Link>
                     {/* 9 card Astrology */}
                     {/* Gruhapravesha */}
-                    <Link to='/gruhapravesha'>
+                    <Link to='/services/paurohitya/gruhapravesha'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -372,7 +374,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={GruhapraveshaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -389,7 +391,7 @@ const PaurohityaServices = () => {
                     </Link>
                      {/* 10 card Astrology */}
                     {/* Pitru Paksha */}
-                    <Link to='/pitrupaksha'>
+                    <Link to='/services/paurohitya/pitrupaksha'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -398,7 +400,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={PitruPakshaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -415,7 +417,7 @@ const PaurohityaServices = () => {
                     </Link>
                       {/* 11 card Astrology */}
                     {/* Shraddha */}
-                    <Link to='/shraddha'>
+                    <Link to='/services/paurohitya/shraddha'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -424,7 +426,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={ShraddhaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -441,7 +443,7 @@ const PaurohityaServices = () => {
                     </Link>
                      {/* 12 card Astrology */}
                     {/* Uttara Kriya Karma */}
-                    <Link to='/uttarakriyakarma'>
+                    <Link to='/services/paurohitya/uttarakriyakarma'>
                     <div className="purohityhaallcard">
                         {/* image container */}
                         <div className="purohityhaimagecontianer">
@@ -450,7 +452,7 @@ const PaurohityaServices = () => {
 						<img className="purohathiyaimages" src={UttaraKriyaKarmaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpurohityhaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpurohityhaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="purohithyaafdetailscontainer">
 
@@ -465,8 +467,13 @@ const PaurohityaServices = () => {
                         </div>
 					</div>
                     </Link>
+                  
+   
                     </div>
+                
 				</div>
+              
+               
     </div>
     </>
   )

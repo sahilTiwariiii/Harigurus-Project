@@ -143,6 +143,9 @@
     border-bottom: 25px solid transparent;
     border-right: 15px solid #ff7010
 }
+.seeallastrologyshaorangebutton:hover{
+    color:  rgb(255, 255, 255);   
+}
 .astrologyfdetailscontainer{
     padding-inline: 15px;
     text-align: start;

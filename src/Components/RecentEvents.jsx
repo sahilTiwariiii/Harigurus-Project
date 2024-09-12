@@ -16,38 +16,43 @@ const RecentEvents = () => {
         <p className='recenteventsparagraph'>HariGurus continues to be the preferred place for our users to find purohits and cooks who make their events a grand success. We take pride in connecting you with the best professionals, ensuring every occasion is memorable and seamless</p>
 
         <div className="recenteventscardscontainer">
+          {/* Aksharabhyasa */}
          <div className="realcardrecentcard">
           <img className='recenteventimg' src={Aksharabhyasa} alt="" />
           <div className="hoverstripe">
-           <Link className='viewdetailsorange'>View Details</Link>
+           <Link to='/services/paurohitya/aksharabhyasa' className='viewdetailsorange'>View Details</Link>
           </div>
           {/* stars */}
           <img className='starsrating' src={Stars} alt="" />
           <h4 className='akramtikram'>Aksharabhyasa</h4>
           
          </div>
+
+         {/* Mundan */}
          <div className="realcardrecentcard">
           <img className='recenteventimg' src={Mundan} alt="" />
           <div className="hoverstripe">
-           <Link className='viewdetailsorange'>View Details</Link>
+           <Link  to='/services/paurohitya/mundan' className='viewdetailsorange'>View Details</Link>
           </div>
           {/* stars */}
           <img className='starsrating' src={Stars} alt="" />
           <h4 className='akramtikram'>Mundan</h4>
          </div>
+         {/* Namakarana */}
          <div className="realcardrecentcard">
           <img className='recenteventimg' src={Namakarana} alt="" />
           <div className="hoverstripe">
-           <Link className='viewdetailsorange'>View Details</Link>
+           <Link to='/services/paurohitya/namakarna' className='viewdetailsorange'>View Details</Link>
           </div>
           {/* stars */}
           <img className='starsrating' src={Stars} alt="" />
           <h4 className='akramtikram'>Namakarana</h4>
          </div>
+         {/* Uttara Kriya Karma */}
          <div className="realcardrecentcard">
           <img className='recenteventimg' src={Uttarakk} alt="" />
           <div className="hoverstripe">
-           <Link className='viewdetailsorange'>View Details</Link>
+           <Link to='/services/paurohitya/uttarakriyakarma' className='viewdetailsorange'>View Details</Link>
           </div>
           {/* stars */}
           <img className='starsrating' src={Stars} alt="" />

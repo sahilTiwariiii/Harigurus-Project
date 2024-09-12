@@ -4,18 +4,25 @@ import applogo from '../assets/logo.png'
 import headphone from "../assets/headphone.svg"
 import signinlogo from "../assets/signin.svg"
 import hamburger from "../assets/hamburger.svg"
-import {Link, NavLink} from "react-router-dom"
+import {Link, NavLink, useNavigate} from "react-router-dom"
 import HeaderModal from './HeaderModal'
 
 
+
 const Header = () => {
+  const navigate=useNavigate();
 const [isOpen, setIsOpen] = useState(false);
 
 const clickedOnHamburger=()=>{
   setIsOpen(prev => !prev);
 }
 
-
+const onLogoClickFunction=()=>{
+  navigate('/')
+}
+const onHeadPhoneClickFunction=()=>{
+  navigate('/contact')
+}
   return (
     <>
     <header>
@@ -23,10 +30,10 @@ const clickedOnHamburger=()=>{
             <div className="containerone">
 
            
-         <img className='imgg' src={applogo} alt="logo" />
+         <img onClick={onLogoClickFunction} className='imgg' src={applogo} alt="logo" />
          <div className="icon-background">
             {/* icon */}
-            <img className='headphone' src={headphone} alt="headphone" />
+            <img onClick={onHeadPhoneClickFunction} className='headphone' src={headphone} alt="headphone" />
          </div>
          </div>
        
@@ -106,7 +113,7 @@ const clickedOnHamburger=()=>{
         isActive?"nav-link active":"nav-link"}>Profiles</NavLink>
          <NavLink to='contact' className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>Contact</NavLink>
-         <NavLink to='signin' className={({isActive})=>
+         <NavLink  to='auth' className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>Sign In{">"}</NavLink>
             </div>
 

@@ -9,3 +9,6 @@ No, `useLocation` is not a part of React or JavaScript itself. It is a hook prov
 `useLocation` is **not a part of React itself**, but rather a part of **React Router**, which is a separate library built on top of React. React Router is used for managing navigation and routing in React applications. 
 
 So, while `useLocation` is used in React projects, it's not directly part of React core—it's part of the `react-router-dom` package.
+
+
+<a href="https://www.youtube.com/channel/UCa1qcU6MURrjTjXSjHjxJrg" target="_blank" rel="noreferrer"><img src="/assets/images/svg/youtube.svg" alt=""></a>

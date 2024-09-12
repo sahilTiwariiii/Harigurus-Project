@@ -8,7 +8,9 @@ import MostPopularEvents from './MostPopularEvents'
 import WhyChooseUs from './WhyChooseUs'
 import WhatOurCustomerSays from './WhatOurCustomerSays'
 import RecentEvents from './RecentEvents'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  const navigate=useNavigate()
   // for the first heading orange color heading
   const [firstImageHover, setFirstImageHover] = useState("What’s your Event?");
   // for second heading 
@@ -38,7 +40,9 @@ const Home = () => {
     setFirstParagraphChange("Seek blessing or offer thanksgiving to the divine by performing poojas and homas without any hassle.")
     setSecondParagraphChange("Book the services of knowledgeable purohits online, to conduct rituals as prescribed by the vedas and scriptures.")
   }
-
+ const BooKAppointmentFunctionNavigate=()=>{
+   navigate('/services')
+ }
   
   return (
     <>
@@ -55,7 +59,7 @@ const Home = () => {
         <p className='firstpararaph'>{firstParagraphChange}</p>
         <p className="secondparagraph">{secondParagraphChange}</p>
 
-<button className='mubuttonn'>BOOK APPOINTMNT</button>
+<button onClick={BooKAppointmentFunctionNavigate} className='mubuttonn'>BOOK APPOINTMNT</button>
       </div>
       <div className="secondchilderncontainer">
         <img className='fistImage' onMouseEnter={changeFirstImageContent} src={firstImage} alt="" />

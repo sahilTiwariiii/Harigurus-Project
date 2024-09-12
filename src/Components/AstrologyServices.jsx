@@ -40,7 +40,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
     <div className="astrologyservicemaincontainer">
               {/* first astrology conatiner */}
     <div className="insideastrologyfirstcontainer">
-					<h1 className="inastrologyserheading">Puja Services</h1>
+					<h1 className="inastrologyserheading">Astrology Services</h1>
 					{/* navigation button */}
 					<div className="astrologynavigationbutton">
 						<Link to="/" className="inastrologyhomebutton">
@@ -51,7 +51,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 							Services
 						</Link>{' '}
                         &nbsp;  <span className="astrologyabackslashspann">/</span> &nbsp;
-						<Link to="/astrology" className="inapoastrologybutton">
+						<Link to="/services/astrology" className="inapoastrologybutton">
                         Astrology
 						</Link>
 					</div>
@@ -63,7 +63,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 
                   {/* first card */}
                         {/* Online Consultation */}
-                        <Link to='/onlineconsultation'>
+                        <Link to='/services/astrology/onlineconsultation'>
                         <div className="astrologyaallcard">
                         {/* image container */}
                         <div className="astrologyimagecontianer">
@@ -72,7 +72,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 						<img className="astrologyimages" src={astrologyFirstImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallastrologyshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallastrologyshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="astrologyfdetailscontainer">
 
@@ -89,7 +89,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
                     </Link>
                   {/* second card */}
                         {/* Book & Visit */}
-                        <Link to='/bookavisit'>
+                        <Link to='/services/astrology/bookavisit'>
                         <div className="astrologyaallcard">
                         {/* image container */}
                         <div className="astrologyimagecontianer">
@@ -98,7 +98,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 						<img className="astrologyimages" src={astrologySecondImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallastrologyshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallastrologyshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="astrologyfdetailscontainer">
 
@@ -115,7 +115,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
                     </Link>
                   {/* third card */}
                         {/* Q & A */}
-                        <Link to='/qanda'>
+                        <Link to='/services/astrology/qanda'>
                         <div className="astrologyaallcard">
                         {/* image container */}
                         <div className="astrologyimagecontianer">
@@ -124,7 +124,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 						<img className="astrologyimages" src={astrologyThirdImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallastrologyshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallastrologyshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="astrologyfdetailscontainer">
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../styles/Services.css';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import ShashtipoorthiImage from '../assets/Shashtipoorthi.jpeg';
 import SatyaNarayanPujaImage from '../assets/SatyaNarayanPuja.jpg';
 import cookImage from '../assets/imagee.jpeg';
 import astrologyImage from '../assets/astrology.jpg';
-const Services = () => {
+const Services = () => { 
     const [showMoreAndLessPurohitya, setshowMoreAndLessPurohitya] = useState(false)
    const [showMoreAndLessPujas, setShowMoreAndLessPujas] = useState(false)
    const [showMoreAndLessCook, setShowMoreAndLessCook] = useState(false)
@@ -65,7 +65,7 @@ const Services = () => {
 
                     
 					{/* first card Purohitya */}
-                    <Link to='/paurohitya'>
+                    <Link to='/services/paurohitya'>
 					<div className="serviceallcard">
                         {/* image container */}
                         <div className="serviceimagecontianer">
@@ -90,7 +90,7 @@ const Services = () => {
 					</div>
                     </Link>
 					{/* second card Satyanarayan Puja */}
-                    <Link to='/pujas'>
+                    <Link to='/services/pujas'>
 					<div className="serviceallcard">
                         {/* image container */}
                         <div className="serviceimagecontianer">
@@ -114,7 +114,7 @@ const Services = () => {
 					</div>
                     </Link>
 					{/* third card Cook */}
-                    <Link to='/cook'>
+                    <Link to='/services/cook'>
 					<div className="serviceallcard">
                         {/* image container */}
                         <div className="serviceimagecontianer">
@@ -138,7 +138,7 @@ const Services = () => {
 					</div>
                     </Link>
 					{/* fourth card Astrology */}
-                    <Link to='/astrology'>
+                    <Link to='/services/astrology'>
 					<div className="serviceallcard">
                         {/* image container */}
                         <div className="serviceimagecontianer">
@@ -163,7 +163,9 @@ const Services = () => {
                     </Link>
                     </div>
 				</div>
+                <Outlet/>
 			</div>
+            
 		</>
 	);
 };

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.maincheckoutpaylatercontainerboos{
+    max-width: 1200px;
+    margin-inline: auto; 
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px; 
+}
+.secondpayoutcontainerboos{
+      background-image: url(../assets//bakgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    max-width: 1200px;
+    margin-inline: auto; 
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 80px;
+}
+.paylaterthankyouforyour{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+    margin: 0;
+}
+.smallhedingpaylater{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8; 
+    font-weight: 400;
+}
+.tillthenyoucanseepaylater{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    color: 
+    rgb(151, 176, 193); 
+    font-weight: 400;
+    font-style: italic;
+}
+.paylaterhere{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    color: 
+    rgb(255, 112, 16);
+    font-weight: 400;
+    font-style: italic;
+}
+.secondpaylaterindieoutercontaienr{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #17384E;
+    padding-inline: 10px;
+}
+
+.paylateroutheading{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.paylaternavigationbutton{
+    height: 40px;
+    width: 133.781px;
+    /* display: inline-block; */
+    background-color: #1D3443;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paylaterhomebutton{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 18px;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8; 
+}
+.paylaterbackslashspann{
+    color: #cee1e8;
+}
+.paylaterservicebutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+
+
+/* first button */
+.paylatercheckoutbutton{
+    position: absolute;
+    height: 50px;
+    background-color: #ff7010;
+    width:fit-content;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    cursor: pointer;
+    outline: none;
+    /* top: -25px; */
+    /* left: 17px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.paylatercheckoutbutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ff7010;
+}
+.paylatercheckoutbutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #ff7010
+}
+.paylaterthreebuttonsimpo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+@media (max-width:990px) {
+    .secondpayoutcontainerboos{
+        padding-inline: 20px;
+    }
+    .paylaterthreebuttonsimpo{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}

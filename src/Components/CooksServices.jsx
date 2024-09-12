@@ -26,7 +26,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
     <div className="cookservicemaincontainer">
         {/* first cook conatiner */}
     <div className="insidecooksfirstcontainer">
-					<h1 className="incooksarheading">Puja Services</h1>
+					<h1 className="incooksarheading">Cook Services</h1>
 					{/* navigation button */}
 					<div className="cooksnavigationbutton">
 						<Link to="/" className="incooksshomebutton">
@@ -37,7 +37,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 							Services
 						</Link>{' '}
                         &nbsp;  <span className="cooksabackslashspann">/</span> &nbsp;
-						<Link to="/cook" className="inapocooksbutton">
+						<Link to="/services/cook" className="inapocooksbutton">
                         Cook
 						</Link>
 					</div>
@@ -50,7 +50,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 
                         {/* first card */}
                         {/* In-house Cooking */}
-                        <Link to='/inhousecooking'>
+                        <Link to='/services/cook/inhousecooking'>
                         <div className="cooksshallcard">
                         {/* image container */}
                         <div className="cooksimagecontianer">
@@ -59,7 +59,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 						<img className="cokkssimages" src={cookfirstImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallcookshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallcookshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="cooksaafdetailscontainer">
 
@@ -77,7 +77,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 
                          {/* second card */}
                         {/* Catering */}
-                        <Link to='/catering'>
+                        <Link to='/services/cook/catering'>
                         <div className="cooksshallcard">
                         {/* image container */}
                         <div className="cooksimagecontianer">
@@ -86,7 +86,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 						<img className="cokkssimages" src={CateringImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallcookshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout' className='seeallcookshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="cooksaafdetailscontainer">
 

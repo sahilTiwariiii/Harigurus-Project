@@ -16,6 +16,9 @@
 	font-family: "Philosopher", sans-serif;
 	color: #cee1e8;
 }
+.detailspageorangebutton:hover{
+    color: #cee1e8;
+}
 .pujjasanavigationbutton{
     height: 40px;
     width: 224.781px;

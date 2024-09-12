@@ -2,7 +2,12 @@ import React from 'react'
 import "../styles/BookAnEvent.css"
 import dateImage from '../assets/date.svg'
 import timeImage from '../assets/time.svg'
+import { useNavigate } from 'react-router-dom'
 const BookAnEvent = () => {
+    const navigate=useNavigate();
+    const BookAnEventButtonFunction=()=>{
+        navigate('/checkout')
+    }
   return (
     <>
     <section>
@@ -49,7 +54,7 @@ const BookAnEvent = () => {
                         <option value="">Office Puja</option>
                     </select>
                 </div>
-                <button className="orangebuttonevent">Boot Event</button>
+                <button onClick={BookAnEventButtonFunction} className="orangebuttonevent">Boot Event</button>
             </div>
         </div>
     </section>

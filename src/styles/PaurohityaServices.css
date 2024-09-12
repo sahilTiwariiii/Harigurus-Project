@@ -147,7 +147,9 @@
     border-bottom: 25px solid transparent;
     border-right: 15px solid #ff7010
 }
-
+.seeallpurohityhaorangebutton:hover{
+    color:  rgb(255, 255, 255);   
+}
 .purohithyaafdetailscontainer{
     padding-inline: 15px;
     text-align: start;

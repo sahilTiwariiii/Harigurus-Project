@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.checkoutmaincontainerboos{
+    max-width: 1200px;
+    margin-inline: auto; 
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.checkoutheading{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.checkoutnavigationbutton{
+    height: 40px;
+    width: 133.781px;
+    /* display: inline-block; */
+    background-color: #1D3443;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkouthomebutton{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 18px;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8; 
+}
+.checkoutbackslashspann{
+    color: #cee1e8;
+}
+.checkoutservicebutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.checkoutsecondmaincontainer{
+    background-image: url(../assets/bakgroundimage.jpg);
+    max-width: 1200px;
+    margin-inline: auto;
+    height: auto;
+    padding-inline: 100px;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+.checkoutsecondoutercontainer{
+    background-color: #17394F;
+    padding: 40px;
+    /* padding-bottom: 50px; */
+
+}
+.contextmobilenumber{
+    position: relative;
+  }
+
+ 
+ .contextinputstagshmm{
+    /* margin-top: 20px; */
+    /* width: -webkit-fill-available; */
+	height: 50px;
+	background-color: inherit;
+	border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 0;
+	outline: none;
+	/* margin-bottom: 20px; */
+	color: #cee1e8;
+    /* margin-inline: 20px; */
+ }
+ .mainboosnpepao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+ }
+  .contextgogajoga{
+    /* margin-top: 20px; */
+    width: -webkit-fill-available;
+	height: 50px;
+	background-color: inherit;
+	border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 0;
+	outline: none;
+	/* margin-bottom: 20px; */
+	color: #cee1e8;
+    /* margin-inline: 20px; */
+}
+input{
+    padding-left: 20px;
+}
+input::placeholder{
+    /* margin: 0; */
+	/* text-align: start; */
+	font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 20px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+    color: #96B0C0;;
+}
+.contextgetotpbutton{
+    position: absolute;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color: #999;
+    top: 11px;
+    right: 15px;
+    /* cursor: default; */
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    padding: 2px 12px;
+    border-radius: 3px;
+}
+.casteandsubcastmainbooscontainer{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    gap: 20px;
+}
+.casteheading{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    color: 
+    rgb(229, 240, 245);
+}
+.contextcastecontainer{
+  
+}
+.contextsubcastecontainer{
+ 
+}
+
+.selecttagcheckout{
+    width: 100%;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 0;
+    outline: none;
+    /* margin-bottom: 20px; */
+    color: #cee1e8;
+}
+.optionsvalurcheckout{
+    background-color: #17394F;
+}
+.contextdateandtimemainbooscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: start;
+}
+.checkoutdatecontainer{
+    position: relative;
+}
+.checkouttimecontainer{
+    position: relative;
+}
+.iconsofdateandtimecontaxt{
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
+}
+
+.checkoutdatemonthyear{
+    width: -webkit-fill-available;
+    height: 50px;
+    background-color: #17394F;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 0;
+    outline: none;
+    color: #cee1e8;
+}
+
+
+/* first button */
+.checkoutorangebutton{
+    position: absolute;
+    height: 50px;
+    background-color: #ff7010;
+    width:fit-content;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    cursor: pointer;
+    outline: none;
+    /* top: -25px; */
+    /* left: 17px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.checkoutorangebutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ff7010;
+}
+.checkoutorangebutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #ff7010
+}
+.checkoutorangebutton:hover{
+    color:   rgb(255, 255, 255);   ;
+}
+/* second button */
+.checkoutpaymentorangebutton{
+    position: absolute;
+    height: 50px;
+    background-color: #031D2E;
+    width:fit-content;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    cursor: pointer;
+    outline: none;
+    /* top: -25px; */
+    /* left: 17px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.checkoutpaymentorangebutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #031D2E;
+}
+.checkoutpaymentorangebutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #031D2E
+}
+
+.checkoutpaymentorangebutton:hover {
+    background-color: #ff7010; /* Change button background color */
+}
+
+.checkoutpaymentorangebutton:hover::after {
+    border-left-color: #ff7010; /* Change right triangle color */
+}
+
+.checkoutpaymentorangebutton:hover::before {
+    border-right-color: #ff7010; /* Change left triangle color */
+}
+
+
+/* thrid button */
+.checkoutdoneorangebutton{
+    position: absolute;
+    height: 50px;
+    background-color: #031D2E;
+    width:fit-content;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    outline: none;
+    /* top: -25px; */
+    /* left: 17px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.checkoutdoneorangebutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #031D2E;
+}
+.checkoutdoneorangebutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #031D2E
+}
+
+
+.checkoutdoneorangebutton:hover {
+    background-color: #ff7010; /* Change button background color */
+}
+
+.checkoutdoneorangebutton:hover::after {
+    border-left-color: #ff7010; /* Change right triangle color */
+}
+
+.checkoutdoneorangebutton:hover::before {
+    border-right-color: #ff7010; /* Change left triangle color */
+}
+
+.firstdivofthreebuttonscontainer{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+.headingandpricebooscontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.checkoutcontainermainheading{
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.contextpriceee{
+	font-size: 28px;
+	line-height: 31px;
+	font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #ff7010;
+}
+.contextdateandtimeheading{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    color: rgb(229, 240, 245);
+}
+.servicemodeandincludepujaitemmaincontext{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    gap: 20px;
+}
+.contextaddarticle{
+    margin-top: 20px;
+}
+.contextaddarticle{
+    text-align: start;
+}
+.contextcheckbox{
+    width: 18px;
+    height: 18px;
+    background-color: #031d2e;
+    border-radius: 4px;
+}
+.lastcontainercheckboxandbutton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.checkoutcheckboxbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.checkoutbuttonscontainertwobuttons{
+    display: flex;
+    gap: 30px;
+}
+.ternandconditons{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+   color: #FE7011;
+}
+.iagreeto{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8; 
+}
+.contextspanbox{
+    width: 18px;
+    height: 18px;
+    background-color: #031d2e;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    /* padding: 2px; */
+}
+.checkoutcheckimage{
+    width: 12px;
+    height: 18px;
+}
+
+@media (max-width:320px) {
+    .checkoutfirstcontainer{
+        padding-top: 20px;
+    }
+}
+@media (max-width:370px) {
+    .headingandpricebooscontainer{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:460px) {
+    .firstdivofthreebuttonscontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:700px) {
+    .mainboosnpepao{
+        grid-template-columns: 1fr;
+    }
+    .casteandsubcastmainbooscontainer{
+        grid-template-columns: 1fr;
+    }
+    .contextdateandtimemainbooscontainer{
+        grid-template-columns: 1fr;
+    }
+    .servicemodeandincludepujaitemmaincontext{
+        grid-template-columns: 1fr;
+    }
+    .lastcontainercheckboxandbutton{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .checkoutbuttonscontainertwobuttons{
+        flex-direction: column;
+    }
+}
+@media (max-width:990px) {
+    .checkoutsecondmaincontainer{
+        padding-inline: 20px;
+    }
+}

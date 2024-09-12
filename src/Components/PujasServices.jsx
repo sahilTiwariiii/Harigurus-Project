@@ -54,7 +54,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 							Services
 						</Link>{' '}
                         &nbsp;  <span className="pujjasabackslashspann">/</span> &nbsp;
-						<Link to="/pujas" className="inpujjapujjahbutton">
+						<Link to="/services/pujas" className="inpujjapujjahbutton">
                         Pujas
 						</Link>
 					</div>
@@ -66,7 +66,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
                     <div className="pujjasoutercontainer">
                         {/* first card */}
                         {/* Satyanarayana Puja */}
-                        <Link to='/satyanarayanapuja'>
+                        <Link to='/services/pujas/satyanarayanapuja'>
                         <div className="pujjjashaallcard">
                         {/* image container */}
                         <div className="pujjashaimagecontianer">
@@ -75,7 +75,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 						<img className="pujjassimages" src={SatyaNarayanPujaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpujjasshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpujjasshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="pujjassssaafdetailscontainer">
 
@@ -93,7 +93,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
                          
                           {/* second card */}
                         {/* Lakshmi Puja  */}
-                        <Link to='/lakshmipuja'>
+                        <Link to='/services/pujas/lakshmipuja'>
                         <div className="pujjjashaallcard">
                         {/* image container */}
                         <div className="pujjashaimagecontianer">
@@ -102,7 +102,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 						<img className="pujjassimages" src={LakshmiPujaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpujjasshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpujjasshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="pujjassssaafdetailscontainer">
 
@@ -123,7 +123,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 
                          {/* third card */}
                         {/* Office Puja  */}
-                        <Link to='/officepuja'>
+                        <Link to='/services/pujas/officepuja'>
                         <div className="pujjjashaallcard">
                         {/* image container */}
                         <div className="pujjashaimagecontianer">
@@ -132,7 +132,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 						<img className="pujjassimages" src={OfficePujaImage} alt="" />
                         </div>
                         {/* orangebutton here */}
-                        <span className='seeallpujjasshaorangebutton'>BOOK NOW</span>
+                        <Link to='/checkout'  className='seeallpujjasshaorangebutton'>BOOK NOW</Link>
                         {/* second paragraph contianer */}
                         <div className="pujjassssaafdetailscontainer">
 

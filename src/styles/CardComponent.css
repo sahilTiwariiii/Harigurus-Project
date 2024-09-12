@@ -14,7 +14,9 @@
     border: 1.5px dashed #357DA9; /* Initial static border color */
     border-radius: 50%;
 }
-
+.readmorecardcomponent{
+    text-decoration: underline;
+}
 .particulardatacardcard::before {
     content: '';
     position: absolute;

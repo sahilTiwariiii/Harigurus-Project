@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 const CardComponent = () => {
 	return (
 		<>
+		{/* Aksharabhyasa */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={AksharabhyasaImage} alt="" />
@@ -21,8 +22,9 @@ const CardComponent = () => {
 				<p className="paragraphofcardcomponent">
 					Start your child’s formal education with goddess Saraswati’s blessings.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/aksharabhyasa' className="readmorecardcomponent">Read More</Link>
 			</div>
+			{/* Mundan */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={mundanImage} alt="" />
@@ -32,8 +34,9 @@ const CardComponent = () => {
 				<p className="paragraphofcardcomponent">
 					Cleansing your child’s soul of the past karma as it begins the journey through life.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/mundan' className="readmorecardcomponent">Read More</Link>
 			</div>
+			{/* Namakarna */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={NamakarnaImage} alt="" />
@@ -43,9 +46,9 @@ const CardComponent = () => {
 				<p className="paragraphofcardcomponent">
 					Give your child the name blessed by the divine, as they go ahead to forge their destiny.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/namakarna' className="readmorecardcomponent">Read More</Link>
 			</div>
-
+            {/* Upanayana */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={UpanayanaImage} alt="" />
@@ -55,9 +58,9 @@ const CardComponent = () => {
 				<p className="paragraphofcardcomponent">
 					Introduce your child to spirituality and the way of life as they enter adolescence.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/upanayana' className="readmorecardcomponent">Read More</Link>
 			</div>
-
+            {/* Engagement */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={EngagementImage} alt="" />
@@ -68,8 +71,9 @@ const CardComponent = () => {
 					Enable the bride’s and the groom’s consensual commitment to marriage under the guidance of
 					well-versed purohits.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/engagement' className="readmorecardcomponent">Read More</Link>
 			</div>
+			{/* Wedding */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={WeddingImage} alt="" />
@@ -79,8 +83,9 @@ const CardComponent = () => {
 				<p className="paragraphofcardcomponent">
 					Perform the wedding of your dear ones with all the key vedic rituals by experienced purohits.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/wedding' className="readmorecardcomponent">Read More</Link>
 			</div>
+			{/* Shashtipoorthi */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={ShashtipoortiShantiImage} alt="" />
@@ -91,8 +96,9 @@ const CardComponent = () => {
 					Mark the completion of 60 fruitful years by renewing marriage vows along with divine blessings of a
 					healthy, long life..
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/shashtipoorthishanti' className="readmorecardcomponent">Read More</Link>
 			</div>
+			{/* Bhimaratha Shanti */}
 			<div className="datacardcomponent">
 				<div className="particulardatacardcard">
 					<img className="imageimageimagess" src={BhimarathashanthiImage} alt="" />
@@ -102,7 +108,7 @@ const CardComponent = () => {
 				<p className="paragraphofcardcomponent">
 					Celebrate the 70th birthday while seeking the blessings of health, happiness and long life.
 				</p>
-				<Link className="readmorecardcomponent">Read More</Link>
+				<Link to='/services/paurohitya/bhimarathashanti' className="readmorecardcomponent">Read More</Link>
 			</div>
 		</>
 	);

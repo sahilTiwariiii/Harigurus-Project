@@ -1,0 +1,308 @@
+.maindivqrcodepagebossmaincontainer{
+    max-width: 1200px;
+    margin-inline: auto; 
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px; 
+}
+.qrcodepageoutheading{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: #cee1e8;
+}
+.qrcodepagenavigationbutton{
+    height: 40px;
+    width: 133.781px;
+    /* display: inline-block; */
+    background-color: #1D3443;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qrcodepagehomebutton{
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 18px;
+    font-family: "Inter", sans-serif;
+    color: #cee1e8; 
+}
+.qrcodepagebackslashspann{
+    color: #cee1e8;
+}
+.qrcodepageservicebutton{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 18px;
+	font-family: "Inter", sans-serif;
+	color: #cee1e8;
+}
+.secondqrcodepagecontainerboos{
+    background-image: url(../assets//bakgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    max-width: 1200px;
+    margin-inline: auto; 
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 80px;
+}
+.secondqrcodepageindieoutercontaienr{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #17384E;
+    padding-inline: 220px;
+}
+
+.qrcodepagethreebuttonsimpo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+/* first button */
+.qrcodepagecheckoutbutton{
+    position: absolute;
+    height: 50px;
+    background-color: #ff7010;
+    width:fit-content;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    cursor: pointer;
+    outline: none;
+    /* top: -25px; */
+    /* left: 17px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.qrcodepagecheckoutbutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ff7010;
+}
+.qrcodepagecheckoutbutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #ff7010
+}
+
+
+/* thrid button */
+.qrcodethirdimagecheckoutbutton{
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    background-color: #031D2E;
+    width:fit-content;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    outline: none;
+    /* top: -25px; */
+    /* left: 17px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);   
+}
+.qrcodethirdimagecheckoutbutton::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #031D2E;
+}
+.qrcodethirdimagecheckoutbutton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #031D2E
+}
+
+
+.qrcodethirdimagecheckoutbutton:hover {
+    background-color: #ff7010; /* Change button background color */
+}
+
+.qrcodethirdimagecheckoutbutton:hover::after {
+    border-left-color: #ff7010; /* Change right triangle color */
+}
+
+.qrcodethirdimagecheckoutbutton:hover::before {
+    border-right-color: #ff7010; /* Change left triangle color */
+}
+
+.qrcodepagethankyouforyour{
+    font-size: 28px;
+    line-height: 31px;
+    font-weight: 400;
+	font-family: "Philosopher", sans-serif;
+	color: 
+    rgb(255, 112, 16);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.qrcodescannermaincontainer {
+    background-color: #FFFFFF;
+    width: fit-content;
+    padding-inline: 21px;
+}
+.blackheadingbetterandbetter{
+    font-size: 18px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+    font-weight: 500;
+	font-family: "Inter", sans-serif;
+	color: rgb(17, 17, 17);
+}
+
+.upiidofqrscanner{
+    font-size: 14px;
+	/* line height for giving the space beween two lines */
+	line-height: 24px;
+    font-weight: 400;
+	font-family: "Inter", sans-serif;
+	color: rgb(17, 17, 17);
+    padding-bottom: 36px;
+}
+.phonepelogoofqcode{
+    width: 50%;
+    margin-top: 25px;
+}
+
+.acceptedheretexthey{
+    font-size: 24px;
+    /* line height for giving the space beween two lines */
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: 
+    rgb(95, 37, 159); 
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+.phonepaylogoyaplogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcodemainpaidcontainer{
+    position: absolute;
+    height: 50px;
+    background-color: #ff7010;
+    width:fit-content;
+    /* align-items: center; */
+    /* text-align: center; */
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 23px;
+    position: relative;
+    margin-left: 15px;
+    border: none !important;
+    cursor: pointer;
+    outline: none;
+    /* top: -25px; */
+    font-size: 14px;
+    /* line height for giving the space beween two lines */
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+    color:  rgb(255, 255, 255);  
+    margin-top: 20px; 
+    margin-right: 20px;
+}
+.qrcodemainpaidcontainer::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ff7010;
+}
+.qrcodemainpaidcontainer::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 15px solid #ff7010
+}
+.qrcodemainpaidcontainer:hover{
+    color:  rgb(255, 255, 255);  
+}
+.outerorangebutoonqrcodecontainer{
+    text-align: end;
+}
+
+
+
+
+
+@media (max-width:480px) {
+    .qrscannerimageandgolo{
+        width: 100%;
+     }
+}
+
+@media (max-width:990px) {
+    .secondqrcodepagecontainerboos{
+        padding-inline: 20px;
+    }
+    .secondqrcodepageindieoutercontaienr{
+        padding-inline: 20px;
+    }
+    .qrcodepagethreebuttonsimpo{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
