@@ -46,7 +46,7 @@ const onSigninandRegisterIconClickFuntion=()=>{
             <div className="one">
          <NavLink id='home' to='/' className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>Home</NavLink>
-         <NavLink to='/about'  className={({isActive})=>
+         <NavLink id='home' to='/about'  className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>About</NavLink>
 
 
@@ -57,6 +57,7 @@ const onSigninandRegisterIconClickFuntion=()=>{
          
         } service>Services
                <div className="dropdownmaincontainer">
+                
           <div className='minks'>
           <Link to='/services/paurohitya' className='pau'>Pauohitya
           <div className="pauohitya-dopdown-container">
@@ -66,7 +67,6 @@ const onSigninandRegisterIconClickFuntion=()=>{
             <Link to='/services/paurohitya/upanayana' className='pinks'>Upanayana</Link>
             <Link to='services/paurohitya/engagement' className='pinks'>Engagement</Link>
             <Link to='/services/paurohitya/wedding' className='pinks'>Wedding</Link>
-            <Link to='/services/paurohitya/shashtipoorthiShanti' className='pinks'>Shashtipoorti Shanti</Link>
             <Link to='/services/paurohitya/bhimarathaShanti' className='pinks'>Bhimaratha Shanti</Link>
             <Link to='/services/paurohitya/gruhapravesha' className='pinks'>Gruhapravesha</Link>
             <Link to='/services/paurohitya/pitruPaksha' className='pinks'>Pitru Paksha</Link>
@@ -112,11 +112,11 @@ const onSigninandRegisterIconClickFuntion=()=>{
 
         {/* </div> */}
         
-         <NavLink to='profiles' className={({isActive})=>
+         <NavLink id='home' to='profiles' className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>Profiles</NavLink>
-         <NavLink to='contact' className={({isActive})=>
+         <NavLink id='home' to='contact' className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>Contact</NavLink>
-         <NavLink  to='auth' className={({isActive})=>
+         <NavLink id='home'  to='auth' className={({isActive})=>
         isActive?"nav-link active":"nav-link"}>Sign In{">"}</NavLink>
             </div>
 
