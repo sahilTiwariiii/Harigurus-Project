@@ -176,10 +176,10 @@ The **Harigurus** website is built and optimized for production using **Vite**. 
 
 ### 🔗 Live Demo
 You can access the live version of the website here:
-[🌐 Harigurus Website](https://https://www.harigurus.com/)
+[🌐 Harigurus Website](https://www.harigurus.com/)
 
 ### 🛠️ Building for Production
 To build the application for production, run the following command:
 ```bash
 # Development Phase
-[🌐 Harigurus Website](https://https://www.https://harigurusw.netlify.app/)
+[🌐 Harigurus Website](https://harigurusw.netlify.app/)
