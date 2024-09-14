@@ -186,6 +186,15 @@
     border-bottom: 25px solid transparent;
     border-right: 15px solid #ff7010
 }
+.detailspageorangebutton:hover{
+    background-color: #F56200;
+}
+.detailspageorangebutton:hover::after{
+    border-left: 15px solid #F56200;
+}
+.detailspageorangebutton:hover::before{
+    border-right: 15px solid #F56200
+}
 .buttonsdetailspage{
     display: flex;
     gap: 20px;

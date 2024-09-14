@@ -5,6 +5,7 @@ import downArrowImage from '../assets/downArrow.svg';
 import rightArrowImage from '../assets/rightarrow.svg';
 import purohitImage from '../assets/Purohit.svg';
 import cooksImage from '../assets/CookProfile.svg';
+import { Helmet } from 'react-helmet';
 const Profiles = () => {
 	const [ purohitsContainer, setPurohitsContainer ] = useState(true);
 	const [ cooksContainer, setCooksContainer ] = useState(true);
@@ -23,6 +24,9 @@ const Profiles = () => {
     }
 	return (
 		<>
+		<Helmet>
+			<title>Harigurus | Profiles</title>
+		</Helmet>
 			<div className="profilemaincontainer">
 				{/* first  container */}
 				<div className="profilefirstcontainer">

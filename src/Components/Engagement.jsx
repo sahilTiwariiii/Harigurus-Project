@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import EngagementImage from "../assets/Engagement.jpg"
 import { Link, NavLink} from 'react-router-dom'
 import "../styles/Engagement.css"
+import { Helmet } from 'react-helmet'
 const Engagement = () => {
     const [howdoweHelp, setHowdoweHelp] = useState(false)
 
@@ -19,6 +20,9 @@ const Engagement = () => {
     };
   return (
     <>
+    <Helmet>
+      <title>Harigurus | Engagement</title>
+    </Helmet>
     <div className="detailsamaincontainerr">
       {/* first aksharabhyasa contianer */}
       <div className="detailsssfirstcontainer">

@@ -5,6 +5,7 @@ import ShashtipoorthiImage from '../assets/Shashtipoorthi.jpeg';
 import SatyaNarayanPujaImage from '../assets/SatyaNarayanPuja.jpg';
 import cookImage from '../assets/imagee.jpeg';
 import astrologyImage from '../assets/astrology.jpg';
+import { Helmet } from 'react-helmet';
 const Services = () => { 
     const [showMoreAndLessPurohitya, setshowMoreAndLessPurohitya] = useState(false)
    const [showMoreAndLessPujas, setShowMoreAndLessPujas] = useState(false)
@@ -43,6 +44,9 @@ const Services = () => {
     }
 	return (
 		<>
+        <Helmet>
+            <title>Harigurus | Services</title>
+        </Helmet>
 			<div className="servicesmaincontainer">
 				{/* first container */}
 				<div className="insideservicefirstcontainer">
@@ -82,7 +86,7 @@ const Services = () => {
 						<h3 className="nameofservice">Paurohitya</h3>
 						<p className="putohitaddress">{showMoreAndLessPurohitya?putohityaFullDescription:purohityalessDescription} 
 
-                            <span onClick={showlessandmorePurohityaContainer} className="showmoree">{showMoreAndLessPurohitya?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmorePurohityaContainer} className="showmoree">{showMoreAndLessPurohitya?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -107,7 +111,7 @@ const Services = () => {
 						<h3 className="nameofservice">Pujas</h3>
 						<p className="putohitaddress">{showMoreAndLessPujas?pujasFullDescription:pujaslessDescription} 
 
-                            <span onClick={showlessandmorePujasContainer} className="showmoree">{showMoreAndLessPujas?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmorePujasContainer} className="showmoree">{showMoreAndLessPujas?"Show Less":"Show More"}</Link>
                             
                             </p>
                         </div>
@@ -131,7 +135,7 @@ const Services = () => {
 						<h3 className="nameofservice">Cook</h3>
 						<p className="putohitaddress">{showMoreAndLessCook?cookFullDescription:cooklessDescription} 
 
-                            <span onClick={showlessandmoreCookContainer} className="showmoree">{showMoreAndLessCook?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmoreCookContainer} className="showmoree">{showMoreAndLessCook?"Show Less":"Show More"}</Link>
                             
                             </p>
                         </div>
@@ -155,7 +159,7 @@ const Services = () => {
 						<h3 className="nameofservice">Astrology</h3>
 						<p className="putohitaddress">{showMoreAndLessAstrology?astrologyFullDescription:astrologylessDescription} 
 
-                            <span onClick={showlessandmoreAstrologyContainer} className="showmoree">{showMoreAndLessAstrology?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmoreAstrologyContainer} className="showmoree">{showMoreAndLessAstrology?"Show Less":"Show More"}</Link>
                             
                             </p>
                         </div>

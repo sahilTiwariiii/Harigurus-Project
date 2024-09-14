@@ -140,7 +140,14 @@
     border-right: 15px solid #ff7010
 }
 .seeallpujjasshaorangebutton:hover{
-    color:  rgb(255, 255, 255);   
+    color:  rgb(255, 255, 255);  
+    background-color: #F56200; 
+}
+.seeallpujjasshaorangebutton:hover::after{
+    border-left: 15px solid #F56200;
+}
+.seeallpujjasshaorangebutton:hover::before{
+    border-right: 15px solid #F56200
 }
 .pujjassssaafdetailscontainer{
     padding-inline: 15px;

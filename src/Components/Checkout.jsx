@@ -6,6 +6,7 @@ import timeImage from '../assets/time.svg';
 import { Link, Outlet } from 'react-router-dom';
 import React, { useState } from 'react';
 import Select from 'react-select';
+import { Helmet } from 'react-helmet';
 const Checkout = () => {
 	const [showAndHideChekbox, setShowAndHideChekbox] = useState(false)
 	const showAndHideCheckboxFunction=()=>{
@@ -232,6 +233,9 @@ const Checkout = () => {
 	return (
 
 		<>
+		<Helmet>
+			<title>Harigurus | Checkout</title>
+		</Helmet>
 			<div className="checkoutmaincontainerboos">
 				{/* first checkout contianer */}
 				<div className="checkoutfirstcontainer">

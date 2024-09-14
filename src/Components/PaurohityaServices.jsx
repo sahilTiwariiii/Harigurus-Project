@@ -13,6 +13,7 @@ import GruhapraveshaImage from '../assets/Gruhapravesha.jpg';
 import PitruPakshaImage from '../assets/PitruPaksha.jpg';
 import ShraddhaImage from '../assets/Shraddha.jpg';
 import UttaraKriyaKarmaImage from '../assets/UttaraKriyaKarma.jpg';
+import { Helmet } from 'react-helmet';
 const PaurohityaServices = () => {
     const [showMoreAndLessAksDescription, setshowMoreAndLessAksDescription] = useState(false)
     const [showMoreAndlessMundan, setShowMoreAndlessMundan] = useState(false)
@@ -62,7 +63,7 @@ const PaurohityaServices = () => {
      const bhimarathaFullDescription="A ceremony that marks the husband in married relationship reaching the age of 70, Bhima Ratha Shanti brings all the family members together to conduct a series of poojas and homas to seek divine blessings for a long, healthy and happy marital life ahead. The ceremony cleanses the person of any bad karma or sins committed during the lifetime."
        const bhimarathalessDescription=bhimarathaFullDescription.slice(0,70)+"..."
     //  Gruhapravesha
-       const GruhapraveshaFullDescription="A cleansing ritual conducted whenever someone moves to a new house, Gruhapravesha involves a series of poojas performed on an auspicious day to cleanse the dwelling of any negative energy and seek the blessings of good fortune, love, happiness, and fulfilment from the deities.sanctification of the new home."
+       const GruhapraveshaFullDescription="A cleansing ritual conducted whenever someone moves to a new house, Gruhapravesha involves a series of poojas performed on an auspicious day to cleanse the dwelling of any negative energy and seek the blessings of good fortune, love, happiness, and fulfilment from the deities.sanctification."
 
        const GruhapraveshalessDescription=GruhapraveshaFullDescription.slice(0,70)+"..."
     //    PitruPaksha
@@ -128,6 +129,9 @@ const PaurohityaServices = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Harigurus | Paurohitya</title>
+    </Helmet>
     <div className="paurohityaservicesmaincontainer">
 
         {/* first Paurohitya Services container */}
@@ -174,7 +178,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Aksharabhyasa</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessAksDescription?AksharabhyasaFullDescription:AksharabhyasalessDescription} 
 
-                            <span onClick={showlessandmoreAkshContainer} className="showmoreepurohitya">{showMoreAndLessAksDescription?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmoreAkshContainer} className="showmoreepurohitya">{showMoreAndLessAksDescription?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -200,7 +204,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Mundan</h3>
 						<p className="putohitservicesaddress">{showMoreAndlessMundan?mundanFullDescription:mundanlessDescription} 
 
-                            <span onClick={showmoreandlessfunctionMundan} className="showmoreepurohitya">{showMoreAndlessMundan?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionMundan} className="showmoreepurohitya">{showMoreAndlessMundan?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -226,7 +230,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Namakarna</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessNamakarna?namakarnaFullDescription:namakarnalessDescription} 
 
-                            <span onClick={shwomoreandlessrfunctionNamkarna} className="showmoreepurohitya">{showMoreAndLessNamakarna?"Show Less":"Show More"}</span>
+                            <Link onClick={shwomoreandlessrfunctionNamkarna} className="showmoreepurohitya">{showMoreAndLessNamakarna?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -252,7 +256,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Upanayana</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessUpanayana?upanayanaFullDescription:upanayanalessDescription} 
 
-                            <span onClick={showlessandmorefunctionUpanayana} className="showmoreepurohitya">{showMoreAndLessUpanayana?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmorefunctionUpanayana} className="showmoreepurohitya">{showMoreAndLessUpanayana?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -278,7 +282,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Engagement</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessEngagement?engagementFullDescription:engagementlessDescription} 
 
-                            <span onClick={showlessandmorefunctionEngagement} className="showmoreepurohitya">{showMoreAndLessEngagement?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmorefunctionEngagement} className="showmoreepurohitya">{showMoreAndLessEngagement?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -304,7 +308,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Wedding</h3>
 						<p className="putohitservicesaddress">{showMoreAndlessWedding?weddingFullDescription:weddinglessDescription} 
 
-                            <span onClick={showlessandmorefunctionWedding} className="showmoreepurohitya">{showMoreAndlessWedding?"Show Less":"Show More"}</span>
+                            <Link onClick={showlessandmorefunctionWedding} className="showmoreepurohitya">{showMoreAndlessWedding?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -330,7 +334,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Shashtipoorthi Shanti</h3>
 						<p className="putohitservicesaddress">{showMoreAndlessShashtipoorthi?ShashtipoorthiFullDescription:shashtipoorthilessDescription} 
 
-                            <span onClick={showmoreandlessfunctionShashtipoorthi} className="showmoreepurohitya">{showMoreAndlessShashtipoorthi?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionShashtipoorthi} className="showmoreepurohitya">{showMoreAndlessShashtipoorthi?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -356,7 +360,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Bhimaratha Shanti</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessBhimaratha?bhimarathaFullDescription:bhimarathalessDescription} 
 
-                            <span onClick={showmoreandlessfunctionBhimaratha} className="showmoreepurohitya">{showMoreAndLessBhimaratha?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionBhimaratha} className="showmoreepurohitya">{showMoreAndLessBhimaratha?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -382,7 +386,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Gruhapravesha</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessGruhapravesha?GruhapraveshaFullDescription:GruhapraveshalessDescription} 
 
-                            <span onClick={showmoreandlessfunctionGruhapravesha} className="showmoreepurohitya">{showMoreAndLessGruhapravesha?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionGruhapravesha} className="showmoreepurohitya">{showMoreAndLessGruhapravesha?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -408,7 +412,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Pitru Paksha </h3>
 						<p className="putohitservicesaddress">{showMoreAndLessPitruPaksha?pitruPakshaFullDescription:pitruPakshalessDescription} 
 
-                            <span onClick={showmoreandlessfunctionPitruPaksha} className="showmoreepurohitya">{showMoreAndLessPitruPaksha?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionPitruPaksha} className="showmoreepurohitya">{showMoreAndLessPitruPaksha?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -434,7 +438,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Shraddha</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessShraddha?ShraddhaFullDescription:ShraddhalessDescription} 
 
-                            <span onClick={showmoreandlessfunctionShraddha} className="showmoreepurohitya">{showMoreAndLessShraddha?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionShraddha} className="showmoreepurohitya">{showMoreAndLessShraddha?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -460,7 +464,7 @@ const PaurohityaServices = () => {
 						<h3 className="nameofpurohityaservice">Uttara Kriya Karma</h3>
 						<p className="putohitservicesaddress">{showMoreAndLessUttaraKriyaKarma?UttaraKriyaKarmaFullDescription:UttaraKriyaKarmalessDescription} 
 
-                            <span onClick={showmoreandlessfunctionUttaraKriyaKarma} className="showmoreepurohitya">{showMoreAndLessUttaraKriyaKarma?"Show Less":"Show More"}</span>
+                            <Link onClick={showmoreandlessfunctionUttaraKriyaKarma} className="showmoreepurohitya">{showMoreAndLessUttaraKriyaKarma?"Show Less":"Show More"}</Link>
                             
                             </p>
                        

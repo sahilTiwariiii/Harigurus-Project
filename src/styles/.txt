@@ -10,5 +10,12 @@ No, `useLocation` is not a part of React or JavaScript itself. It is a hook prov
 
 So, while `useLocation` is used in React projects, it's not directly part of React core—it's part of the `react-router-dom` package.
 
+2) SEO(search enginer optimization)
+react hemlet
+To add a heading to your page using **React Helmet** in the `Copyright` component, here's how you can modify it:
 
-<a href="https://www.youtube.com/channel/UCa1qcU6MURrjTjXSjHjxJrg" target="_blank" rel="noreferrer"><img src="/assets/images/svg/youtube.svg" alt=""></a>
+
+
+
+### About Your Doubt:  
+If your whole component is inside the `<Helmet>` tag and the **React Helmet** package terminates or is removed, **your React app won't terminate**. Only the title and meta description won't be dynamically updated, but the rest of the component (HTML and functionality) will work as normal. React Helmet just modifies the `<head>` section of the HTML, so it's not critical to the app’s core functionality.

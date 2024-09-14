@@ -144,7 +144,14 @@
     border-right: 15px solid #ff7010
 }
 .seeallastrologyshaorangebutton:hover{
-    color:  rgb(255, 255, 255);   
+    color:  rgb(255, 255, 255);  
+    background-color: #F56200; 
+}
+.seeallastrologyshaorangebutton:hover::after{
+    border-left: 15px solid #F56200;
+}
+.seeallastrologyshaorangebutton:hover::before{
+    border-right: 15px solid #F56200
 }
 .astrologyfdetailscontainer{
     padding-inline: 15px;

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, NavLink} from 'react-router-dom'
 import "../../styles/OfficePuja.css"
 import OfficePujaImage from "../../assets/OfficePuja.jpg"
+import { Helmet } from 'react-helmet'
 const OfficePuja = () => {
     const [howdoweHelp, setHowdoweHelp] = useState(false)
 
@@ -19,6 +20,9 @@ const OfficePuja = () => {
     };
   return (
     <>
+    <Helmet>
+      <title>Harigurus | Office Puja</title>
+    </Helmet>
     <div className="detailsamaincontainerr">
       {/* first aksharabhyasa contianer */}
       <div className="detailsssfirstcontainer">
@@ -37,7 +41,7 @@ const OfficePuja = () => {
 						</Link>
             &nbsp;  <span className="detailsssbackslashspann">/</span> &nbsp;
 						<Link to="/services/pujas/officepuja" className="detailsssbutton">
-                        OfficePuja
+                        Office Puja
 						</Link>
 					</div>
 				</div>

@@ -61,13 +61,14 @@ a{
     color: white;
     
 }
-
-.icon-backgroundtwo{
+.icon-backgroundtwo {
     height: 40px;
     width: 40px;
-    border-radius:50% ;
+    border-radius: 50%;
     background-color: #17384E;
     /* position: relative; */
+    position: relative;
+    top: 3px;
 }
 
 
@@ -152,7 +153,6 @@ a:hover{
     content: '';
     display: none;
     z-index: 1000;
-    /* flex-direction: column; */
 }
 .dropdownmaincontainer::before {
     content: '';
@@ -167,6 +167,7 @@ a:hover{
 
   .service:hover .dropdownmaincontainer {
     display: block; /* Show dropdown on hover */
+   
   }
 
   .minks{
@@ -206,7 +207,7 @@ a:hover{
     border-color: transparent #17384E transparent transparent;
 }
 
-.pau:hover .pauohitya-dopdown-container{
+.minks:hover .pauohitya-dopdown-container{
     display: flex;
 }
 
@@ -244,8 +245,9 @@ a:hover{
     padding: 15px 0 15px 0;
 }
 
-.pujas:hover .pujas-dopdown-container{
+.minks:hover .pujas-dopdown-container{
 display: flex;
+
 }
 
 .cook-dopdown-container{
@@ -277,7 +279,7 @@ display: flex;
     border-color: transparent #17384E transparent transparent;
 }
 
-.cooking:hover .cook-dopdown-container{
+.minks:hover .cook-dopdown-container{
     display: flex;
 }
 
@@ -310,7 +312,7 @@ display: flex;
     border-color: transparent #17384E transparent transparent;
 }
 
-.astro:hover .astrology-dopdown-container{
+.minks:hover .astrology-dopdown-container{
     display: flex;
 }
 
@@ -318,7 +320,7 @@ display: flex;
 @media (max-width: 460px) {
     .imgg{
         height: 61px;
-        width: 239px;
+        width: 200px;
     }
 }
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../styles/Mundan.css"
 import MundanImage from "../assets/Mundan.jpg"
 import { Link, NavLink} from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const Mundan = () => {
   const [howdoweHelp, setHowdoweHelp] = useState(false)
 
@@ -20,6 +21,9 @@ const Mundan = () => {
   
   return (
     <>
+    <Helmet>
+      <title>Harigurus | Mundan</title>
+    </Helmet>
     <div className="detailsamaincontainerr">
       {/* first aksharabhyasa contianer */}
       <div className="detailsssfirstcontainer">

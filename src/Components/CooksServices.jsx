@@ -3,6 +3,7 @@ import "../styles/CooksServices.css"
 import cookfirstImage from "../assets/imagee.jpeg"
 import CateringImage from "../assets/Catering.png"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const CooksServices = () => {
     const [showMoreAndLessFirstImage, setShowMoreAndLessFirstImage] = useState(false)
     const [showMoreAndLessSecondImage, setShowMoreAndLessSecondImage] = useState(false)
@@ -23,6 +24,9 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
     }
   return (
     <>
+    <Helmet>
+        <title>Harigurus | Cook</title>
+    </Helmet>
     <div className="cookservicemaincontainer">
         {/* first cook conatiner */}
     <div className="insidecooksfirstcontainer">
@@ -67,7 +71,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 						<h3 className="nameofcookssservice">In-house Cooking</h3>
 						<p className="cookssservicesaddress">{showMoreAndLessFirstImage?inhouseCookingFullDescription:inhouseCookinglessdescription} 
 
-                            <span onClick={inHouseCookingFunction} className="showmoreecookss">{showMoreAndLessFirstImage?"Show Less":"Show More"}</span>
+                            <Link onClick={inHouseCookingFunction} className="showmoreecookss">{showMoreAndLessFirstImage?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -94,7 +98,7 @@ const cateringlessdescription=cateringFullDescription.slice(0,70)+"..."
 						<h3 className="nameofcookssservice">Catering</h3>
 						<p className="cookssservicesaddress">{showMoreAndLessSecondImage?cateringFullDescription:cateringlessdescription} 
 
-                            <span onClick={cateringCookingFunction} className="showmoreecookss">{showMoreAndLessSecondImage?"Show Less":"Show More"}</span>
+                            <Link onClick={cateringCookingFunction} className="showmoreecookss">{showMoreAndLessSecondImage?"Show Less":"Show More"}</Link>
                             
                             </p>
                        

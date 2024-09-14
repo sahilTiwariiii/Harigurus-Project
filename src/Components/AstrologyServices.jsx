@@ -4,6 +4,7 @@ import astrologyFirstImage from "../assets/astrology.jpg"
 import astrologySecondImage from "../assets/astrologysecond.jpg"
 import astrologyThirdImage from "../assets/astrologythird.jpg"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const AstrologyServices = () => {
     const [showMoreAndLessOnlineConsultation, setShowMoreAndLessOnlineConsultation] = useState(false)
     const [showMoreAndLessBookVisit, setShowMoreAndLessBookVisit] = useState(false)
@@ -37,6 +38,9 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 
   return (
     <>
+    <Helmet>
+        <title>Harigurus | Astrology</title>
+    </Helmet>
     <div className="astrologyservicemaincontainer">
               {/* first astrology conatiner */}
     <div className="insideastrologyfirstcontainer">
@@ -80,7 +84,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 						<h3 className="nameofastrologysservice">Online Consultation</h3>
 						<p className="astrologyservicesaddress">{showMoreAndLessOnlineConsultation?onlineConsultationFullDescription:onlineConsultationlessdescription} 
 
-                            <span onClick={OnlineConsultationFunction} className="showmoreeastrology">{showMoreAndLessOnlineConsultation?"Show Less":"Show More"}</span>
+                            <Link onClick={OnlineConsultationFunction} className="showmoreeastrology">{showMoreAndLessOnlineConsultation?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -106,7 +110,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 						<h3 className="nameofastrologysservice">Book & Visit</h3>
 						<p className="astrologyservicesaddress">{showMoreAndLessBookVisit?bookVisitFullDescription:bookVisitlessdescription} 
 
-                            <span onClick={BookVisitFunction} className="showmoreeastrology">{showMoreAndLessBookVisit?"Show Less":"Show More"}</span>
+                            <Link onClick={BookVisitFunction} className="showmoreeastrology">{showMoreAndLessBookVisit?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -132,7 +136,7 @@ const qAndAlessdescription=qAndAFullDescription.slice(0,70)+"..."
 						<h3 className="nameofastrologysservice">Q & A</h3>
 						<p className="astrologyservicesaddress">{showMoreAndLessQAndA?qAndAFullDescription:qAndAlessdescription} 
 
-                            <span onClick={QandAFunction} className="showmoreeastrology">{showMoreAndLessQAndA?"Show Less":"Show More"}</span>
+                            <Link onClick={QandAFunction} className="showmoreeastrology">{showMoreAndLessQAndA?"Show Less":"Show More"}</Link>
                             
                             </p>
                        

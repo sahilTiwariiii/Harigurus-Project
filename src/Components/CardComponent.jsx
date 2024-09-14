@@ -20,7 +20,7 @@ const CardComponent = () => {
 				<h2 className="headingheading">Aksharabhyasa</h2>
 				<div className="cardcomponentorangelineinthis"></div>
 				<p className="paragraphofcardcomponent">
-					Start your child’s formal education with goddess Saraswati’s blessings.
+					Start your child’s formal education with goddess Saraswati’s blessings and Wish.
 				</p>
 				<Link to='/services/paurohitya/aksharabhyasa' className="readmorecardcomponent">Read More</Link>
 			</div>
@@ -56,7 +56,7 @@ const CardComponent = () => {
 				<h2 className="headingheading">Upanayana</h2>
 				<div className="cardcomponentorangelineinthis"></div>
 				<p className="paragraphofcardcomponent">
-					Introduce your child to spirituality and the way of life as they enter adolescence.
+					Introduce your child to spirituality and the way of life as they enter adolescence and make your life happy.
 				</p>
 				<Link to='/services/paurohitya/upanayana' className="readmorecardcomponent">Read More</Link>
 			</div>
@@ -106,7 +106,7 @@ const CardComponent = () => {
 				<h2 className="headingheading">Bhimaratha Shanti</h2>
 				<div className="cardcomponentorangelineinthis"></div>
 				<p className="paragraphofcardcomponent">
-					Celebrate the 70th birthday while seeking the blessings of health, happiness and long life.
+					Celebrate the 70th birthday while seeking the blessings of health, happiness and long life and best health.
 				</p>
 				<Link to='/services/paurohitya/bhimarathashanti' className="readmorecardcomponent">Read More</Link>
 			</div>

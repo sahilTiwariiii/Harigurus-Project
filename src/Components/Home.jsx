@@ -9,6 +9,7 @@ import WhyChooseUs from './WhyChooseUs'
 import WhatOurCustomerSays from './WhatOurCustomerSays'
 import RecentEvents from './RecentEvents'
 import { useNavigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const Home = () => {
   const navigate=useNavigate()
   // for the first heading orange color heading
@@ -46,7 +47,9 @@ const Home = () => {
   
   return (
     <>
- 
+  <Helmet>
+    <title>Harigurus | Leave you Worries to Us</title>
+  </Helmet>
     <div className="booscontainer">
       <div className="sortcontainer">
 

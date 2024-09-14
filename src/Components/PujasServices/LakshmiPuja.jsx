@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, NavLink} from 'react-router-dom'
 import "../../styles/LakshmiPuja.css"
 import LakshmiPujaImage from "../../assets/LakshmiPooja.jpg"
+import { Helmet } from 'react-helmet'
 const LakshmiPuja = () => {
     const [howdoweHelp, setHowdoweHelp] = useState(false)
 
@@ -19,6 +20,10 @@ const LakshmiPuja = () => {
     };
   return (
     <>
+    <Helmet>
+      <title>Harigurus | 
+      Lakshmi Puja</title>
+    </Helmet>
     <div className="detailsamaincontainerr">
       {/* first aksharabhyasa contianer */}
       <div className="detailsssfirstcontainer">

@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 import AboutusImage from '../assets/about2.jpg'
 import phoneSvg from '../assets/phone.svg'
 import "../styles/About.css"
 const About = () => {
   return (
     <>
+    <Helmet>
+      <title>Harigurus | About</title>
+    </Helmet>
     <div className="aboutmaincontainerr">
       <div className="firstcontainerinaboutus">
       <h1 className='inaboutheading'>About</h1>
@@ -54,6 +58,7 @@ const About = () => {
       
       </div>
     </div>
+   
     </>
   )
 }

@@ -1,9 +1,13 @@
 import React from 'react'
 import "../styles/CheckoutPayLater.css"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const CheckoutPayLater = () => {
   return (
     <>
+	<Helmet>
+		<title>Harigurus | Checkout</title>
+	</Helmet>
     <div className="maincheckoutpaylatercontainerboos">
         {/* first payout contianer */}
 				<div className="paylaterfirstcontainer">

@@ -1,9 +1,13 @@
 import React from 'react'
 import "../styles/NotFoundPage.css"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const NotFoundPage = () => {
   return (
     <>
+    <Helmet>
+      <title>Harigurus | Page Not Found</title>
+    </Helmet>
     <div className="mainfourzerofourcontainer">
     <h1 className='fourzerofourheaidng'>404</h1>
     <h1 className='fourfourpara'>Page not Found</h1>

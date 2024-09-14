@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import '../styles/HeaderModal.css';
 import signinlogo from '../assets/signin.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const HeaderModal = () => {
+	const navigate=useNavigate()
 	const [ serviceContainer, setServiceContainer ] = useState(false);
 	const [ paurohityaContainer, setPaurohityaContainer ] = useState(false);
 	const [ pujasContainer, setPujasContainer ] = useState(false);
 	const [ cookContainer, setCookContainer ] = useState(false);
 	const [ astrologyContainer, setAstrologyContainer ] = useState(true);
-
+ 
 	const opneInsideServiceContainer = () => {
 		setServiceContainer((prev) => !prev);
 	};
@@ -28,29 +29,31 @@ const HeaderModal = () => {
 	const changeAstrologyContainer = () => {
 		setAstrologyContainer((prev) => !prev);
 	};
-
+    const navigateintoLoginandignupRegisterFunction=()=>{
+		navigate('/auth')
+	}
 	return (
 		<div className="modal">
 			<div className="si-container">
 				<div className="icon-signin">
-					<img className="signinlogo" src={signinlogo} alt="" />
+					<img onClick={navigateintoLoginandignupRegisterFunction}  className="signinlogo" src={signinlogo} alt="" />
 				</div>
-				<h2 className="si">Sign In</h2>
+				<h2 onClick={navigateintoLoginandignupRegisterFunction} className="si">Sign In</h2>
 			</div>
 			{/* <div className="content-link" /> */}
 			<div>
 				<div className="cick">
-					<Link>Home</Link>
+					<Link to='/'>Home</Link>
 					<hr />
 				</div>
 
 				<div className="cick">
-					<Link>About</Link>
+					<Link to='/about'>About</Link>
 					<hr />
 				</div>
 
 				<div className="cick">
-					<Link className="ssss">Services</Link>
+					<Link onClick={opneInsideServiceContainer} to='/services' className="ssss">Services</Link>
 					{/* toogl th logo */}
 
 					{serviceContainer ? (
@@ -58,7 +61,7 @@ const HeaderModal = () => {
 							▲
 						</span>
 					) : (
-						<span onClick={opneInsideServiceContainer} className="mick">
+						<span onClick={opneInsideServiceContainer}  className="mick">
 							▼
 						</span>
 					)}
@@ -67,7 +70,7 @@ const HeaderModal = () => {
 					{serviceContainer && (
 						<div className="polo">
 							<div className="ludo">
-								<Link className="chi-chi">Purotiya</Link>
+								<Link onClick={changePaurohityaContainer} to='/services/paurohitya' className="chi-chi">Purotiya</Link>
 
 								{paurohityaContainer ? (
 									<span onClick={changePaurohityaContainer} className="tick">
@@ -78,7 +81,8 @@ const HeaderModal = () => {
 										▼
 									</span>
 								)}
-
+								{/* 1st line  */}
+<span className='hrlinksofservicemagicbox' />
 								{/* puro links */}
 
 								{paurohityaContainer && (
@@ -131,8 +135,9 @@ const HeaderModal = () => {
 									</div>
 								)}
 							</div>
+							
 							<div className="ludo">
-								<Link className="pipi">Pujas</Link>
+								<Link onClick={changePujasContainer} to='/services/pujas' className="pipi">Pujas</Link>
 
 								{pujasContainer ? (
 									<span onClick={changePujasContainer} className="tickone">
@@ -149,23 +154,24 @@ const HeaderModal = () => {
 									<div className="pujjalinks">
 										<ul>
 											<li>
-												<Link>Satyanarayana Puja</Link>
+												<Link to='/services/pujas/satyanarayanapuja'>Satyanarayana Puja</Link>
 											</li>
 
 											<li>
-												<Link>Lakshmi Puja</Link>
+												<Link to='/services/pujas/lakshmipuja'>Lakshmi Puja</Link>
 											</li>
 
 											<li>
-												<Link>Office Puja</Link>
+												<Link to='/services/pujas/officepuja'>Office Puja</Link>
 											</li>
 										</ul>
 									</div>
 								)}
 							</div>
-
+							{/* 2nd line */}
+							<span className='hrlinksofservicemagicbox' />
 							<div className="ludo">
-								<Link className="vota">Cook</Link>
+								<Link onClick={changeCookContainer} to='/services/cook' className="vota">Cook</Link>
 
 								{cookContainer ? (
 									<span onClick={changeCookContainer} className="ticktwo">
@@ -176,25 +182,26 @@ const HeaderModal = () => {
 										▼
 									</span>
 								)}
-
+								{/* 3rd line */}
+<span className='hrlinksofservicemagicbox' />
 								{/* open cook dialog box */}
 
 								{cookContainer && (
 									<div className="cookklinks">
 										<ul>
 											<li>
-												<Link>In-House Cooking</Link>
+												<Link to='/services/cook/inhousecooking'>In-House Cooking</Link>
 											</li>
 
 											<li>
-												<Link>Catering</Link>
+												<Link to='/services/cook/catering'>Catering</Link>
 											</li>
 										</ul>
 									</div>
 								)}
 							</div>
 							<div className="ludo">
-								<Link className="ncncn">Astrology</Link>
+								<Link  onClick={changeAstrologyContainer} to='/services/astrology' className="ncncn">Astrology</Link>
 
 								{astrologyContainer ? (
 									<span onClick={changeAstrologyContainer} className="tickthree">
@@ -210,31 +217,33 @@ const HeaderModal = () => {
 									<div className="astrooolinks">
 										<ul>
 											<li>
-												<Link>Online Consultation</Link>
+												<Link to='/services/astrology/onlineconsultation'>Online Consultation</Link>
 											</li>
 											<li>
-												<Link>Book & Visit</Link>
+												<Link to='/services/astrology/bookavisit'>Book & Visit</Link>
 											</li>
 
 											<li>
-												<Link>Q & A</Link>
+												<Link to='/services/astrology/qanda'>Q & A</Link>
 											</li>
 										</ul>
 									</div>
 								)}
 							</div>
+							{/* 4th line */}
+							<span className='hrlinksofservicemagicbox' />
 						</div>
 					)}
 				</div>
 				<hr />
 
 				<div className="cick">
-					<Link>Profiles</Link>
+					<Link to='/profiles'>Profiles</Link>
 					<hr />
 				</div>
 
 				<div className="cick">
-					<Link>Contact</Link>
+					<Link to='/contact'>Contact</Link>
 					<hr />
 				</div>
 				{/* <div/> */}

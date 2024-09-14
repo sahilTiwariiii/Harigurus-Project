@@ -3,6 +3,7 @@ import "../styles/AuthDialog.css"
 import googleImage from "../assets/google.svg"
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet'
 
 const AuthDialog = () => {
     const [isLogin, setIsLogin] = useState(true)
@@ -13,6 +14,9 @@ const AuthDialog = () => {
   return (
     <>
     {isLogin?(<>
+    <Helmet>
+      <title>Harigurus | Login</title>
+    </Helmet>
         <div className='loginkabapcontainerrealme'>
     {/* login container */}
    <div className="loginmaincontainer">
@@ -49,6 +53,9 @@ const AuthDialog = () => {
     </div>
     
     </>):(<>
+    <Helmet>
+      <title>Harigurus | Register</title>
+    </Helmet>
         <div className='signupkabapcontainerrealme'>
     {/* login container */}
    <div className="signupmaincontainer">

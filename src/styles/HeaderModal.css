@@ -2,14 +2,17 @@
     height: 100vh;
     width: 60%;
     background-color: #031D2F;
-    position: absolute;
-    top: 1px;
+    position: fixed; /* Changed to fixed so the modal stays in place even when scrolling */
+    top: 0; /* Adjusted to align with the top of the viewport */
+    left: 0; /* Ensure it starts from the left */
     border-right: 2px solid #FF7010;
     overflow-y: auto;
     overflow-x: hidden;
-    display: none;
+    display: none; /* Hidden by default */
     padding-right: 24px;
+    z-index: 1001; /* Ensure it appears above other content */
 }
+
 .icon-signin{
     height: 40px;
     width: 40px;
@@ -17,6 +20,7 @@
     background-color: #17384E;
     position: relative;
 }
+
 .si-container{
     display: flex;
     margin-left: 15px;
@@ -33,7 +37,7 @@
 hr{
     border: none;
     height: 2px;
-    background-color: rgb(39, 38, 38);;
+    background-color: rgb(255 255 255 / 10%);
 }
 
 .mick{
@@ -44,7 +48,13 @@ hr{
     color: white;  
    
 }
-
+.hrlinksofservicemagicbox{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(255 255 255 / 10%);
+    display: grid;
+    margin-top: 20px;
+}
 
 .tick{
     /* padding-left: 414px; */
@@ -80,7 +90,7 @@ hr{
     color: white;
     font-size: 12px;
     padding-top: 12px;
-    padding-bottom: 17px;;
+    padding-bottom: 12px;;
 }
 .puurolinks{
     /* display: flex; */
@@ -146,4 +156,21 @@ ul{
         display: block;
         z-index: 1;
     }
+}
+@media (max-width:350px) {
+    .mick{
+        padding-left: 0px;
+    }
+.chi-chi {
+    padding-right: 79%;
+}
+.pipi {
+    padding-right: 79%;
+}
+.vota {
+    padding-right: 78%;
+}
+.ncncn {
+    padding-right: 71%;
+}
 }

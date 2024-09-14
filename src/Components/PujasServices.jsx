@@ -4,6 +4,7 @@ import SatyaNarayanPujaImage from "../assets/SatyaNarayanPuja.jpg"
 import LakshmiPujaImage from "../assets/LakshmiPooja.jpg"
 import OfficePujaImage from "../assets/OfficePuja.jpg"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const PujasServices = () => {
     const [showMoreAndLessSatyanarayanaPuja, setShowMoreAndLessSatyanarayanaPuja] = useState(false)
     const [showMoreAndLessLakshmiPuja, setShowMoreAndLessLakshmiPuja] = useState(false)
@@ -39,6 +40,9 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 
   return (
     <>
+    <Helmet>
+        <title>Harigurus | Pujas</title>
+    </Helmet>
     <div className="pujasservicemaincontainer">
           {/* first Pujas Services container */}
 
@@ -83,7 +87,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 						<h3 className="nameofpujjasservice">Satyanarayana Puja</h3>
 						<p className="pujjasservicesaddress">{showMoreAndLessSatyanarayanaPuja?SatyanarayanaPujaFullDescription:satyanarayanaPujalessDescription} 
 
-                            <span onClick={SatyanarayanaPujaFunction} className="showmoreepujjjas">{showMoreAndLessSatyanarayanaPuja?"Show Less":"Show More"}</span>
+                            <Link onClick={SatyanarayanaPujaFunction} className="showmoreepujjjas">{showMoreAndLessSatyanarayanaPuja?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -110,7 +114,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 						<h3 className="nameofpujjasservice">Lakshmi Puja</h3>
 						<p className="pujjasservicesaddress">{showMoreAndLessLakshmiPuja?lakshmiPujaFullDescription:lakshmiPujalessDescription} 
 
-                            <span onClick={LakshmiPujaFunction} className="showmoreepujjjas">{showMoreAndLessLakshmiPuja?"Show Less":"Show More"}</span>
+                            <Link onClick={LakshmiPujaFunction} className="showmoreepujjjas">{showMoreAndLessLakshmiPuja?"Show Less":"Show More"}</Link>
                             
                             </p>
                        
@@ -140,7 +144,7 @@ const officePujalessDescription=officePujaFullDescription.slice(0,70)+"..."
 						<h3 className="nameofpujjasservice">Office Puja </h3>
 						<p className="pujjasservicesaddress">{showMoreAndLessOfficePuja?officePujaFullDescription:officePujalessDescription} 
 
-                            <span onClick={OfficePujaFunction} className="showmoreepujjjas">{showMoreAndLessOfficePuja?"Show Less":"Show More"}</span>
+                            <Link onClick={OfficePujaFunction} className="showmoreepujjjas">{showMoreAndLessOfficePuja?"Show Less":"Show More"}</Link>
                             
                             </p>
                        

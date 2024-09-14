@@ -3,9 +3,13 @@ import "../styles/Contact.css"
 import callUsImage from "../assets/callabout.svg"
 import addressImage from "../assets/mailabout.svg"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const Contact = () => {
   return (
     <>
+    <Helmet>
+        <title>Harigurus | Contact</title>
+    </Helmet>
     <div className="contactmaincontainermain">
         	{/* first  container */}
 				<div className="contactsfirstcontainer">

@@ -3,6 +3,7 @@ import "../styles/QrCodePage.css"
 import phonePeLogo from "../assets/phonePeLogo.svg"
 import qrCodePeLogo from "../assets/PhonePeqr.jpeg"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 const QrCodePage = () => {
   // Main Checkout
   
@@ -10,6 +11,9 @@ const QrCodePage = () => {
   // QrCodePage
   return (
     <>
+    <Helmet>
+      <title>Harigurus | Checkout</title>
+    </Helmet>
     <div className="maindivqrcodepagebossmaincontainer">
         {/* first qrcode page first container */}
         <div className="qrcodepagefirstbosscontainer">

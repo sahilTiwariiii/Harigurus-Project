@@ -23,6 +23,9 @@ const onLogoClickFunction=()=>{
 const onHeadPhoneClickFunction=()=>{
   navigate('/contact')
 }
+const onSigninandRegisterIconClickFuntion=()=>{
+  navigate('/auth')
+}
   return (
     <>
     <header>
@@ -117,7 +120,7 @@ const onHeadPhoneClickFunction=()=>{
         isActive?"nav-link active":"nav-link"}>Sign In{">"}</NavLink>
             </div>
 
-            <div className='icon-backgroundtwo'>
+            <div onClick={onSigninandRegisterIconClickFuntion} className='icon-backgroundtwo'>
                 <img className='headphone'  src={signinlogo} alt="" />
             </div>
         
