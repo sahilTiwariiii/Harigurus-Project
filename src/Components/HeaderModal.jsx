@@ -43,12 +43,12 @@ const HeaderModal = () => {
 			{/* <div className="content-link" /> */}
 			<div>
 				<div className="cick">
-					<Link to='/'>Home</Link>
+					<Link className='veryuniquelinksks' to='/'>Home</Link>
 					<hr />
 				</div>
 
 				<div className="cick">
-					<Link to='/about'>About</Link>
+					<Link className='veryuniquelinksks' to='/about'>About</Link>
 					<hr />
 				</div>
 
@@ -238,12 +238,12 @@ const HeaderModal = () => {
 				<hr />
 
 				<div className="cick">
-					<Link to='/profiles'>Profiles</Link>
+					<Link className='veryuniquelinksks' to='/profiles'>Profiles</Link>
 					<hr />
 				</div>
 
 				<div className="cick">
-					<Link to='/contact'>Contact</Link>
+					<Link className='veryuniquelinksks' to='/contact'>Contact</Link>
 					<hr />
 				</div>
 				{/* <div/> */}

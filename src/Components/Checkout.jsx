@@ -269,8 +269,8 @@ const Checkout = () => {
 						</div>
 						{/* second dib heaidng and proce */}
 						<div className="headingandpricebooscontainer">
-							<span className="checkoutcontainermainheading">Aksharabhyasa</span>
-							<span className="contextpriceee">₹5,500</span>
+							<span className="checkoutcontainermainheading">Event</span>
+							<span className="contextpriceee">₹ Amount</span>
 						</div>
 						{/* name phone email pincode address otp */}
 						<div className="mainboosnpepao">

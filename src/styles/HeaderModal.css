@@ -34,6 +34,9 @@
     margin-right: 15px;
     padding: 13px 0 13px 0;
 }
+.veryuniquelinksks{
+    color: #cee1e8
+}
 hr{
     border: none;
     height: 2px;
@@ -45,7 +48,7 @@ hr{
     /* height: 12px; */
     /* width: 12px; */
     /* background-color: white; */
-    color: white;  
+    color: #cee1e8
    
 }
 .hrlinksofservicemagicbox{
@@ -142,6 +145,7 @@ li{
 }
 .ssss{
     padding-right: 80%;
+    color: #cee1e8
 }
 .ncncn{
     padding-right: 80%;
