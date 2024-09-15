@@ -62,7 +62,7 @@ const Home = () => {
         <p className='firstpararaph'>{firstParagraphChange}</p>
         <p className="secondparagraph">{secondParagraphChange}</p>
 
-<button onClick={BooKAppointmentFunctionNavigate} className='mubuttonn'>BOOK APPOINTMNT</button>
+<button onClick={BooKAppointmentFunctionNavigate} className='mubuttonn'>BOOK APPOINTMENT</button>
       </div>
       <div className="secondchilderncontainer">
         <img className='fistImage' onMouseEnter={changeFirstImageContent} src={firstImage} alt="" />
